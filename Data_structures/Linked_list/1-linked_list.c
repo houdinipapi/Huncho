@@ -16,14 +16,14 @@ int main(void)
 {
 	int n;
 
-	printf("\n\n Linked List: Create a singly linked list and print it in reverse order: \n");
+	printf("Linked List: Create a singly linked list and print it in reverse order: \n");
 	printf("Input the number of nodes: ");
 	scanf("%d", &n);
 	createNodeList(n);
-	printf("\n Data entered in the list are: \n");
+	printf("Data entered in the list are: \n");
 	displayList();
 	reverseDispList();
-	printf("\n The list in reverse are: \n");
+	printf("The list in reverse is: \n");
 	displayList();
 	return (0);
 }
@@ -36,11 +36,11 @@ void createNodeList(int n)
 	stnode = (struct node *)malloc(sizeof(struct node));
 	if (stnode == NULL)
 	{
-		printf("Memory cannot be allocated.");
+		printf("Memory cannot be allocated.\n");
 	}
 	else
 	{
-		printf("Input data for node 1 : ");
+		printf("Input data for node 1 : \n");
 		scanf("%d", &num);
 		stnode->num = num;
 		stnode->nextptr = NULL;
@@ -50,7 +50,7 @@ void createNodeList(int n)
 			fnNode = (struct node *)malloc(sizeof(struct node));
 			if (fnNode == NULL)
 			{
-				printf("Memory cannot be allocated.");
+				printf("Memory cannot be allocated.\n");
 				break;
 
 			}
@@ -96,7 +96,7 @@ void displayList()
 
 	if (stnode == NULL)
 	{
-		printf("No data found in the list.");
+		printf("No data found in the list.\n");
 	}
 	else
 	{
