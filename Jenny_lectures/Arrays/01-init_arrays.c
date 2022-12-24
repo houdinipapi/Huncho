@@ -1,12 +1,29 @@
-/* This is a test file */
 #include <stdio.h>
 
-void main(void)
+/**
+  * main - takes 5 values from the user and store them
+  * program prints the elements stored in the array.
+  * Return: success
+  */
+
+int main(void)
 {
-	int a[10];
+	int values[5];
 
-	printf("Enter a value:\n");
-	scanf("%d", &a);
+	printf("Enter 5 integers:\n");
 
-	printf("The value you entered is %d\n", a);
+	/* taking input and storing it in an array */
+	for (int i = 0; i < 5; ++i)
+	{
+		scanf("%d", &values[i]);
+	}
+
+	printf("Displaying integers:\n");
+
+	/* printing elements of an array */
+	for (int i = 0; i < 5; ++i)
+	{
+		printf("%d\n", values[i]);
+	}
+	return (0);
 }
