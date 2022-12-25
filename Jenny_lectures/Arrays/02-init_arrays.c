@@ -15,7 +15,7 @@ void main(void)
 		scanf("%d", &a[i]);
 	}
 
-	printf("The rray integers are:\n");
+	printf("The array items are:\n");
 	for (i = 0; i < 5; i++)
 	{
 		printf("%d\n", a[i]);
