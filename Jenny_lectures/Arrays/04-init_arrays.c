@@ -20,6 +20,8 @@ void main(void)
 		printf("Index %d = %d\n", i, a[i]);
 	}
 
+	printf("The elements in reverse order are:\n");
+
 	for (i = 4; i >= 0; i--)
 	{
 		printf("Index %d = %d\n", i, a[i]);
