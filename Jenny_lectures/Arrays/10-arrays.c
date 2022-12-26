@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
-  * main - calculates multiplication of indices in two arrays
-  * stores the sum in the third array.
+  * main - calculates the product of indices in two arrays
+  * stores the product in the third array.
   * Return: 0
   */
 
