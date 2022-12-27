@@ -16,7 +16,7 @@ void main(void)
 		for (j = 0; j < 4; j++)
 		{
 			printf("%d\t", arr[i][j]);
-			if (j == 4)
+			if (j == 3)
 			{
 				printf("\n");
 			}
