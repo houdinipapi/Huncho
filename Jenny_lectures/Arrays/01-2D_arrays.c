@@ -2,31 +2,37 @@
 
 /**
   * main - storing elements in a matrix and printing it
-  * Return: 0
   */
 
-int main(void)
+void main(void)
 {
-	int arr[2][5];
+	/* 2D array declaration */
+	int disp[2][3];
+
+	/* Counter variables for the loop */
 	int i, j;
 
 	for (i = 0; i < 2; i++)
 	{
-		for (j = 0; j < 5; j++)
+		for (j = 0; j < 3; j++)
 		{
-			printf("Enter a[%d][%d]:\n", i, j);
-			scanf("%d", &arr[i][j]);
+			printf("Enter value for disp[%d][%d]:", i, j);
+			scanf("%d", &disp[i][j]);
 		}
 	}
-	printf("printing elements ...\n");
+
+	/* Displaying array elements */
+	printf("Two Dimensional array elements:\n");
 
 	for (i = 0; i < 2; i++)
 	{
-		//printf("\n");
-		for (i = 0; j < 5; j++)
+		for (j = 0; j < 3; j++)
 		{
-			printf("%d\t", arr[i][j]);
+			printf("%d ", disp[i][j]);
+			if (j == 2)
+			{
+				printf("\n");
+			}
 		}
 	}
-	return (0);
 }
