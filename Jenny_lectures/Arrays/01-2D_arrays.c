@@ -28,7 +28,7 @@ void main(void)
 	{
 		for (j = 0; j < 3; j++)
 		{
-			printf("%d ", disp[i][j]);
+			printf("%d\t", disp[i][j]);
 			if (j == 2)
 			{
 				printf("\n");
