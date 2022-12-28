@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
-  * main - a array that prints alphabets
+  * main - prints remaining alphabets
   */
 
 void main(void)
@@ -14,6 +14,7 @@ void main(void)
 	for (i = n; i <= 'z'; i++)
 	{
 		printf("%c ", i);
+	}
 		if (n == 'z')
 		{
 			for (i = n; i >= 'a'; i--)
@@ -21,5 +22,4 @@ void main(void)
 				printf("%c ", i);
 			}
 		}
-	}
 }
