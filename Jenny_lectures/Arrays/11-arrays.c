@@ -12,7 +12,7 @@ void main(void)
 	scanf("%c", &n);
 
 	printf("These are the alphabets that are after %c:\n", n);
-	for (i = n; i <= 'z'; i++)
+	for (i = (n + 1); i <= 'z'; i++)
 	{
 		printf("%c ", i);
 	}
@@ -20,7 +20,7 @@ void main(void)
 
 
 	printf("These are the alphabets that are before %c:\n", n);
-			for (i = n; i >= 'a'; i--)
+			for (i = (n - 1); i >= 'a'; i--)
 			{
 				printf("%c ", i);
 			}
