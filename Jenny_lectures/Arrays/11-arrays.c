@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
-  * main - prints remaining alphabets
+  * main - prints before and after alphabets
   */
 
 void main(void)
@@ -11,17 +11,18 @@ void main(void)
 	printf("Enter an alphabet:\n");
 	scanf("%c", &n);
 
+	printf("These are the alphabets that are after %c:\n", n);
 	for (i = n; i <= 'z'; i++)
 	{
 		printf("%c ", i);
 	}
 	printf("\n");
-		//if (n == 'z')
-		{
+
+
+	printf("These are the alphabets that are before %c:\n", n);
 			for (i = n; i >= 'a'; i--)
 			{
 				printf("%c ", i);
 			}
 			printf("\n");
-		}
 }
