@@ -15,11 +15,13 @@ void main(void)
 	{
 		printf("%c ", i);
 	}
-		if (n == 'z')
+	printf("\n");
+		//if (n == 'z')
 		{
 			for (i = n; i >= 'a'; i--)
 			{
 				printf("%c ", i);
 			}
+			printf("\n");
 		}
 }
