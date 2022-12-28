@@ -28,7 +28,7 @@ int main(void)
 	{
 		c[i] = a[i] * b[i];
 
-		printf("The sum of index %d in both arrays is %d\n", i, c[i]);
+		printf("The product of index %d in both arrays is %d\n", i, c[i]);
 	}
 	return (0);
 }
