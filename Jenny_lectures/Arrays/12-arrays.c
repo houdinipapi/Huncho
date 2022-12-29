@@ -30,7 +30,7 @@ void main(void)
 	{
 		for (j = 0; j < 3; j++)
 		{
-			printf("arr[%d][%d]\t %d\t %p", i, j, arr[i][j], arr[i][j]);
+			printf("arr[%d][%d]\t %d\t %p", i, j, arr[i][j], arr[i]);
 			putchar('\n');
 		}
 	}
