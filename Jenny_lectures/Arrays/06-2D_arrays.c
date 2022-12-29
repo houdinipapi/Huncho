@@ -14,9 +14,6 @@ void main(void)
 		for (j = 0; j < 3; j++)
 		{
 			printf("arr[%d][%d]\n", i, j);
-			printf("%d\t %d", arr[i][j]);
-			if (j == 2)
-				putchar('\n');
 		}
 	}
 }
