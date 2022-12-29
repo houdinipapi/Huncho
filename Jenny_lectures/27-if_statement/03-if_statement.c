@@ -10,12 +10,12 @@ void main(void)
 	printf("Type in l or u:\n");
 	scanf("%c", &c);
 
-	if (c == 'l' || c == 'u')
+	if (c == 'l' || c == 'L')
 	{
 		for (c = 'a'; c <= 'z'; c++)
 			printf("%c ", c);
 	}
-	else if (c == 'L' || c == 'U')
+	else if (c == 'u' || c == 'U')
 	{
 		for (c = 'A'; c <= 'Z'; c++)
 		{
