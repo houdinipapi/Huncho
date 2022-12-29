@@ -16,4 +16,18 @@ void main(void)
 			printf("arr[%d][%d]\n", i, j);
 		}
 	}
+
+	printf("Printing the values of the array\n");
+
+	for (i = 0; i < 3; i++)
+	{
+		for (j = 0; j < 3; j++)
+		{
+			printf("%d\t", arr[i][j]);
+			if (j == 2)
+			{
+				printf("\n");
+			}
+		}
+	}
 }
