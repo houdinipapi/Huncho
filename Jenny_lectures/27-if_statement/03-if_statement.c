@@ -14,13 +14,15 @@ void main(void)
 	{
 		for (c = 'a'; c <= 'z'; c++)
 			printf("%c ", c);
-	}
-	else if (c == 'u' || c == 'U')
-	{
-		for (c = 'A'; c <= 'Z'; c++)
+		if  (c == 'u' || c == 'U')
 		{
-			printf("%c ", c);
+			for (c = 'A'; c <= 'Z'; c++)
+			{
+				printf("%c ", c);
+			}
 		}
+		printf("\n");
 	}
-	printf("\n");
+	else
+		printf("YOU ENTERED THE WRONG CHARACTER!!!\n");
 }
