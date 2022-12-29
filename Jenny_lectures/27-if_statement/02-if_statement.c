@@ -6,12 +6,13 @@
 
 void main(void)
 {
-    char i, n;
+	char i, n;
 
-    printf("Enter an input:\n");
-    scanf("%d", &n);
-    for (i = (n - 1); i >= 'a'; i--)
-    {
-        printf("%c ", i);
-     }
+	printf("Enter an input:\n");
+	scanf("%c", &n);
+
+	for (i = (n - 1); i >= 'a'; i--)
+	{
+		printf("%c ", i);
+	}
 }
