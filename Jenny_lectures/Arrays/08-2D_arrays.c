@@ -27,10 +27,11 @@ int main(void)
 		{
 			printf("%d\t", arr[i][j]);
 			sum = sum + arr[i][j];
-			printf("%p\t", arr[i][j]);
+			printf("%p\t", arr[i]);
 		}
 		printf("\n");
-		printf("%p\n", sum);
 	}
 	printf("%d\n", sum);
+
+	return (0);
 }
