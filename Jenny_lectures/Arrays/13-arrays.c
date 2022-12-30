@@ -20,6 +20,6 @@ void main(void)
 	putchar('\n');
 	for (i = 0; i < 4; i++)
 	{
-		printf("%d\t %p\n", arr[i], arr[i]);
+		printf("%p\n", arr[i]);
 	}
 }
