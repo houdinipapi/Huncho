@@ -5,7 +5,7 @@
   * and the sum
   */
 
-void main(void)
+int main(void)
 {
 	int arr[2][3];
 	int i, j;
@@ -27,11 +27,10 @@ void main(void)
 		{
 			printf("%d\t", arr[i][j]);
 			sum = sum + arr[i][j];
+			printf("%p\t", arr[i][j]);
 		}
 		printf("\n");
-		printf("%p\n", arr[i]);
-		printf("%p\n", arr[j]);
+		printf("%p\n", sum);
 	}
 	printf("%d\n", sum);
-	printf("%p\n", sum);
 }
