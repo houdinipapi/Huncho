@@ -10,10 +10,10 @@ void main(void)
 
 	printf("Printing a pattern\n");
 
-	while (i < 8)
+	while (i <= 7)
 	{
 		j = 7;
-		while (j <= i)
+		while (j >= i)
 		{
 			printf("%d ", j);
 			j--;
