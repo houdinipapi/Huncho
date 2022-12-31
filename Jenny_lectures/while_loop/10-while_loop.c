@@ -10,7 +10,7 @@ void main(void)
 
 	printf("Printing a pattern\n");
 
-	while (i <= 7)
+	while (i < 8)
 	{
 		j = 7;
 		while (j >= i)
