@@ -10,8 +10,8 @@ void main(void)
 
 	while (i < 7)
 	{
-		j = i;
-		while (j < 7)
+		j = 1;
+		while (j < i)
 		{
 			printf("* ");
 			j++;
