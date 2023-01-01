@@ -6,7 +6,7 @@
 
 void main(void)
 {
-	int i = 1, j = 1;
+	int i = 1, j = 0;
 
 	while (i < 7)
 	{
