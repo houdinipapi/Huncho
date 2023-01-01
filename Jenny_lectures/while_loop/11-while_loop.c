@@ -6,10 +6,11 @@
 
 void main(void)
 {
-	int i = 1, j = 0;
+	int i = 1, j;
 
 	while (i < 7)
 	{
+		j = i;
 		while (j < 7)
 		{
 			printf("* ");
