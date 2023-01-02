@@ -18,6 +18,7 @@ void main(void)
 		putchar('\n');
 	}
 
+	printf("* * * * *\n");
 	for (i = 0; i < 6; i++)
 	{
 		for (j = 0; j < 2; j++)
