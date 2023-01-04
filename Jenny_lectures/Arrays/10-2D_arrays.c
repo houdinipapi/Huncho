@@ -36,6 +36,6 @@ void main(void)
 			sumR = sumR + arr[i][j];
 			sumC = sumC + arr[j][i];
 		}
-		printf("Sum of rows = %d\n Sum of columns = %d\n", sumR, sumC);
+		printf("Sum of rows = %d\nSum of columns = %d\n", sumR, sumC);
 	}
 }
