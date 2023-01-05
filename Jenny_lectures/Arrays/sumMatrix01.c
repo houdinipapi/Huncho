@@ -24,19 +24,11 @@ int main(void)
 		for (j = 0; j < 3; j++)
 		{
 			printf("%d\t", arr[i][j]);
+			sum = sum + arr[i][j];
 		}
 		putchar ('\n');
 	}
-
-	/* Calculating the sum of the matrix */
-	for (i = 0; i < 2; i++)
-	{
-		for (j = 0; j < 3; j++)
-		{
-			sum = sum + arr[i][j];
-		}
-		printf("Sum of the matrix = %d\n", sum);
-	}
+	printf("SUM = %d\n", sum);
 
 	return (0);
 }
