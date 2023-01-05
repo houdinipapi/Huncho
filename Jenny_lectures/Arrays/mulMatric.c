@@ -46,5 +46,21 @@ int main(void)
 		putchar('\n');
 	}
 
+	printf("Multiplying the two matrices\n");
+	for (i = 0; i < 3; i++)
+	{
+		for (j = 0; j < 2; j++)
+		{
+			sum = 0;
+			for (k = 0; k < 3; k++)
+			{
+				sum = sum + (a[i][k] * b[k][j]);
+			}
+			c[i][j] = sum;
+			printf("%d\t", c[i][j]);
+		}
+		putchar('\n');
+	}
+
 	return (0);
 }
