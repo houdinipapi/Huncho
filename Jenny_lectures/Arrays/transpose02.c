@@ -18,9 +18,9 @@ void transposeMatrix(int matrix[3][4])
 {
 	int i, j, temp;
 
-	for (i = 0; i < 3; i++)
+	for (i = 0; i < 4; i++)
 	{
-		for (j = i; j < 4; j++)
+		for (j = 0; j < 3; j++)
 		{
 			temp = matrix[i][j];
 			matrix[i][j] = matrix[j][i];
@@ -39,7 +39,7 @@ int main(void)
 	transposeMatrix(matrix);
 
 	printf("Transposed matrix:\n");
-	printMatrix(matrix);
+	transposeMatrix(matrix);
 
 	return (0);
 }
