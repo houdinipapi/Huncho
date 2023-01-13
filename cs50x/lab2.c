@@ -14,7 +14,7 @@ int main(void)
 	scanf("%d", &population);
 
 	/* target population */
-	printf("Enter the target population ");
+	printf("Enter the target population: ");
 	scanf("%d", &target_population);
 
 	for (years = 0; population < target_population; years++)
