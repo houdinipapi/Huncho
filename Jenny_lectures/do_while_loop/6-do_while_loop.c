@@ -12,4 +12,5 @@ void main(void)
 		printf("#\t");
 		i++;
 	} while (i < 3);
+	printf("\n");
 }
