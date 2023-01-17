@@ -21,8 +21,8 @@ void main(void)
 	{
 		for (j = 1; j <= i; j++)
 		{
-			printf("%8d %-8d\n", k, l);
+			printf(" 8");
 		}
-		//printf("\n");
+		printf("\n");
 	}
 }
