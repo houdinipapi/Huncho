@@ -6,9 +6,7 @@
 
 void main(void)
 {
-	int n, i, j, k, l;
-
-	k = l = 8;
+	int n, i, j;
 
 	do
 	{
@@ -19,9 +17,13 @@ void main(void)
 
 	for (i = 1; i <= n; i++)
 	{
+		for (j = 1; j <= (n - i); j++)
+		{
+			printf(" ");
+		}
 		for (j = 1; j <= i; j++)
 		{
-			printf(" 8");
+			printf("#");
 		}
 		printf("\n");
 	}
