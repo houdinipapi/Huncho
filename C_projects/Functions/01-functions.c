@@ -4,17 +4,22 @@
  * main - main function
  */
 
-char get_name(char username[30]);
+double square(double num)
+{
+	double result;
+
+	result = num * num;
+	return (result);
+}
 
 int main(void)
 {
-	char username[30];
-	
-	username[30] = get_name("Enter your name: ");
-}
+	double num;
 
-char get_name(char username[30])
-{
-	//printf("What is your name? "\n);
-	scanf("%s", username);
+	printf("Enter a number: ");
+	scanf("%lf", &num);
+
+	printf("Answer: %f\n", square(num));
+
+	return (0);
 }
