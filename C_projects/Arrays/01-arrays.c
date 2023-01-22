@@ -16,5 +16,7 @@ int main(void)
 		scanf("%d", &age[i]);
 	}
 
+	printf("Fourth pupil = %d years old.\n", age[3]);
+
 	return (0);
 }
