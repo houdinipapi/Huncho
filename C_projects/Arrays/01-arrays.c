@@ -11,7 +11,7 @@ int main(void)
 	int i;
 
 	printf("Enter age of pupils: ");
-	for (i = 1; i <= 5; i++)
+	for (i = 0; i < 5; i++)
 	{
 		scanf("%d", &age[i]);
 	}
