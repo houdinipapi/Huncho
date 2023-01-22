@@ -9,14 +9,14 @@
 int main(void)
 {
 	int num1, num2;
-	char operator;
+	int operator;
 	int sum, sub, prod, div;
 
 	printf("Enter two numbers: ");
 	scanf("%d %d", &num1, &num2);
 
 	printf("Enter an operator: ");
-	scanf("%c", &operator);
+	scanf("%d", &operator);
 
 	if (operator == '+')
 	{
