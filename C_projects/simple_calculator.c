@@ -6,42 +6,44 @@
  * Return: Always 0
  */
 
-int main(void)
+void main(void)
 {
 	int num1, num2;
-	int operator;
+	char operator;
 	int sum, sub, prod, div;
+
+	printf("Enter an operator: ");
+	scanf("%c", &operator);
 
 	printf("Enter two numbers: ");
 	scanf("%d %d", &num1, &num2);
 
-	printf("Enter an operator: ");
-	scanf("%d", &operator);
-
-	if (operator == '+')
+	switch (operator)
 	{
-		sum = num1 + num2;
-		printf("Sum = %d\n", sum);
+		case '+':
+			{
+				sum = num1 + num2;
+				printf("Sum = %d\n", sum);
+			}
+			break;
+		case '-':
+			{
+				sub = num1 - num2;
+				printf("Difference = %d\n", sub);
+			}
+		case '*':
+			{
+				prod = num1 * num2;
+				printf("Product = %d\n", prod);
+			}
+			break;
+		case '/':
+			{
+				div = num1 / num2;
+				printf("Division = %d\n", div);
+			}
+			break;
+		default:
+				printf("Enter a valid operator\n");
 	}
-	if (operator == '-')
-	{
-		sub = num1 - num2;
-		printf("Difference = %d\n", sub);
-	}
-	if (operator == '*')
-	{
-		prod = num1 * num2;
-		printf("Product = %d\n", prod);
-	}
-	if (operator == '/')
-	{
-		div = num1 / num2;
-		printf("Division = %d\n", div);
-	}
-	else
-	{
-		printf("This calculator only uses +, -, *, and / operators.\nPlease enter a valid one!!\n");
-	}
-
-	return (0);
 }
