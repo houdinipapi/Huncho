@@ -9,31 +9,31 @@
 int main(void)
 {
 	int num1, num2;
-	int operator;
+	char operator;
 	int sum, sub, prod, div;
 
 	printf("Enter two numbers: ");
 	scanf("%d %d", &num1, &num2);
 
 	printf("Enter an operator: ");
-	scanf("%d", &operator);
+	scanf("%c", &operator);
 
-	if (operator = '+')
+	if (operator == '+')
 	{
 		sum = num1 + num2;
 		printf("Sum = %d\n", sum);
 	}
-	if (operator = '-')
+	if (operator == '-')
 	{
 		sub = num1 - num2;
 		printf("Difference = %d\n", sub);
 	}
-	if (operator = '*')
+	if (operator == '*')
 	{
 		prod = num1 * num2;
 		printf("Product = %d\n", prod);
 	}
-	if (operator = '/')
+	if (operator == '/')
 	{
 		div = num1 / num2;
 		printf("Division = %d\n", div);
