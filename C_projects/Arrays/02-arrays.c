@@ -11,5 +11,5 @@ void main(void)
 	printf("Enter your name: ");
 	scanf("%s", name);
 
-	printf("The 3rd letter of your name is %d.\n", name[2]);
+	printf("The 3rd letter of your name is %c.\n", name[2]);
 }
