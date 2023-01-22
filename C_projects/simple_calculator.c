@@ -6,7 +6,7 @@
  * Return: Always 0
  */
 
-void main(void)
+int main(void)
 {
 	int num1, num2;
 	char operator;
@@ -46,4 +46,5 @@ void main(void)
 		default:
 				printf("Enter a valid operator\n");
 	}
+	return (0);
 }
