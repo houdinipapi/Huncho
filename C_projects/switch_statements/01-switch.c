@@ -16,7 +16,7 @@ int main(void)
 	{
 		case 'A':
 			{
-				printf("Excelleent\n");
+				printf("Excellent\n");
 			}
 			break;
 		case 'B':
