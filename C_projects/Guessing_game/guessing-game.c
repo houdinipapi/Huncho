@@ -8,14 +8,18 @@
 int main(void)
 {
 	int luckyNumber;
-	int guessTimes = 0;
+	int guessTimes = 1;
 
 	do {
 		printf("Guess a Lucky Number: ");
 		scanf("%d", &luckyNumber);
 		guessTimes++;
-	} while (luckyNumber != 7);
+	} while (guessTimes > 3);
 
+	if (guessTimes > 3)
+	{
+		printf("OUT OF GUESSES!!!\n");
+	}
 	if (luckyNumber == 7)
 	{
 		printf("YEES!! That's our LUCKY NUMBER!!\n");
