@@ -8,21 +8,26 @@
 int main(void)
 {
 	int luckyNumber;
-	int guessTimes = 1;
+	int guessTimes;
 
-	do {
+	for (guessTimes = 0; guessTimes < 3; guessTimes++)
+	{
 		printf("Guess a Lucky Number: ");
 		scanf("%d", &luckyNumber);
-		guessTimes++;
-	} while (guessTimes > 3);
 
+		if (luckyNumber == 7)
+		{
+			printf("YEESS!! That's our Lucky Number!!\n");
+		}
+	}
 	if (guessTimes > 3)
 	{
-		printf("OUT OF GUESSES!!!\n");
+		printf("OUT OF GUESSES\n");
 	}
-	if (luckyNumber == 7)
+	else
 	{
-		printf("YEES!! That's our LUCKY NUMBER!!\n");
+		printf("GAME OVER!!!\n");
 	}
+
 	return (0);
 }
