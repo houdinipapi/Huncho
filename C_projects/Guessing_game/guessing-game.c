@@ -8,7 +8,7 @@
 int main(void)
 {
 	int luckyNumber;
-	int guessTimes = 0;
+	int guessTimes;
 
 	if (guessTimes > 3)
 	{
