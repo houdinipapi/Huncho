@@ -7,16 +7,23 @@
 
 int main(void)
 {
-	int luckyNumber;
+	int luckyNumber, guessTimes;
 
-	do {
-		printf("Guess a lucky number: ");
-		scanf("%d", &luckyNumber);
-	} while (luckyNumber != 7);
-
-	if (luckyNumber == 7)
+	if (guessTimes < 3)
 	{
-		printf("YEES!! That's our LUCKY NUMBER!!\n");
+		do {
+			printf("Guess a lucky number: ");
+			scanf("%d", &luckyNumber);
+		} while (luckyNumber != 7);
+
+		if (luckyNumber == 7)
+		{
+			printf("YEES!! That's our LUCKY NUMBER!!\n");
+		}
+	}
+	else
+	{
+		printf("You have run out of guesses\n");
 	}
 
 	return (0);
