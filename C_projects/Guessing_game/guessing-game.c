@@ -14,5 +14,10 @@ int main(void)
 		scanf("%d", &luckyNumber);
 	} while (luckyNumber != 7);
 
+	if (luckyNumber == 7)
+	{
+		printf("YEES!! That's our LUCKY NUMBER!!\n");
+	}
+
 	return (0);
 }
