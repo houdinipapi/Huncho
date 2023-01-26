@@ -20,7 +20,7 @@ int main(void)
 			printf("YEESS!! That's our Lucky Number!!\n");
 		}
 	}
-	if (guessTimes > 3)
+	if (guessTimes >= 3)
 	{
 		printf("OUT OF GUESSES\n");
 	}
