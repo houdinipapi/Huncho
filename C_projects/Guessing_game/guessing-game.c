@@ -12,10 +12,8 @@ int main(void)
 
 	if (guessTimes > 3)
 	{
-		do {
-			printf("Guess a lucky number: ");
-			scanf("%d", &luckyNumber);
-		} while (luckyNumber != 7);
+		printf("Guess a lucky number: \n");
+		scanf("%d", &luckyNumber);
 
 		if (luckyNumber == 7)
 		{
