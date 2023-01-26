@@ -7,9 +7,10 @@
 
 int main(void)
 {
-	int luckyNumber, guessTimes;
+	int luckyNumber;
+	int guessTimes = 0;
 
-	if (guessTimes < 3)
+	if (guessTimes > 3)
 	{
 		do {
 			printf("Guess a lucky number: ");
