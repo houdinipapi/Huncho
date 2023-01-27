@@ -2,8 +2,8 @@
 
 
 def name(myname):
-    myname = input("What's your name?")
-    print(f"{myname}")
+    myname = input("What's your name? ")
+    print(myname)
 
 
 name("myname")
