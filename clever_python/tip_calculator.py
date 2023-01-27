@@ -8,3 +8,4 @@ tip_amount = food_amount * tip_percentage
 
 total = food_amount + tip_amount
 print("$" + str(total))
+print(type(total))
