@@ -4,5 +4,9 @@ weather = input("What's the weather?? ")
 
 if weather == "rain":
     print("Carry your umbrella")
-else:
+elif weather == "thunderstorm":
+    print("STAY AT HOME")
+elif weather == "cloudy":
+    print("Put on warm clothes!")
+elif weather == "sunny":
     print("Wear your sunglasses")
