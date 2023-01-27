@@ -2,7 +2,7 @@
 
 weather = input("What's the weather?? ")
 
-if weather == "rain" or "RAIN":
+if weather == "rain":
     print("Carry your umbrella")
 else:
     print("Wear your sunglasses")
