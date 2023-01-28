@@ -11,4 +11,4 @@ def total_food(tip_percentage, food_amount):
     return total
 
 
-print("total")
+print(total_food("tip_percentage", "food_amount"))
