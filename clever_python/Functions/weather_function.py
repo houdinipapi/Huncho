@@ -22,4 +22,4 @@ def weather_forecast(weather):
     return weather
 
 
-print(weather_forecast("weather"))
+print(weather_forecast())
