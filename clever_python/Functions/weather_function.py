@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 
-def weather_forecast(str(weather)):
+def weather_forecast(weather):
     weather = input("What is the weather today?")
 
     if weather == "sunny":
