@@ -19,5 +19,7 @@ def weather_forecast(weather):
     else:
         print("Insert correct weather!!")
 
+    return weather
 
-    #return weather_forecast("weather")
+
+print(weather_forecast("weather"))
