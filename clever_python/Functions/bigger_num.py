@@ -7,5 +7,14 @@ def bigger_num(num1, num2):
     >>> bigger_num(3, 4)
     4
     """
-    num1 = input(int("Insert num1: "))
-    num2 = input(int("Insert num2: "))
+    num1 = input("Insert num1: ")
+    num2 = input("Insert num2: ")
+
+    if num1 > num2:
+        print(num1)
+    else:
+        print(num2)
+
+    return bigger_num
+
+bigger_num("num1", "num2")
