@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 
-def bigger_num(num1, num2):
+def bigger_num(num1: int, num2: int) -> int:
     """
     Given two numbers, return the bigger one.
     >>> bigger_num(3, 4)
@@ -16,5 +16,6 @@ def bigger_num(num1, num2):
         print(num2)
 
     return bigger_num
+
 
 bigger_num("num1", "num2")
