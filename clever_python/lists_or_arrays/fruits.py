@@ -3,3 +3,5 @@
 
 fruits = ["orange", "banana", "apple"]
 print(fruits)
+fruits.append("avocado")
+print(fruits)
