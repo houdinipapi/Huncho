@@ -11,11 +11,9 @@ def bigger_num(num1: int, num2: int) -> int:
     num2 = input("Insert num2: ")
 
     if num1 > num2:
-        print(num1)
+        return num1
     else:
-        print(num2)
-
-    return bigger_num
+        return num2
 
 
-bigger_num("num1", "num2")
+print(bigger_num("num1", "num2"))
