@@ -17,9 +17,7 @@ def weather_forecast(weather):
         print("Stay at home!")
 
     else:
-        print("Insert correct weather!!")
-
-    return weather
+        print("Insert correct weather!")
 
 
-print(weather_forecast("weather"))
+weather_forecast("weather")
