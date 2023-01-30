@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 
-def total_food(tip_percentage, food_amount):
+def total_food(tip_percentage: int, food_amount: int) -> int:
     food_amount = input("Enter food amount: ")
     tip_percentage = input("Enter tip percentage: ")
 
