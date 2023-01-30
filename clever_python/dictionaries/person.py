@@ -6,3 +6,4 @@ person = {
         "phone": "Huawei"
         }
 print(person["phone"])
+print(f"My phone is a {person['phone']}.")
