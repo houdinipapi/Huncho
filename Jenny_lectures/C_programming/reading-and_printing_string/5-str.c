@@ -12,5 +12,5 @@ void main(void)
 	gets(name);
 
 	printf("%.5s\n", name);
-	printf("%10s", &name[2]);
+	printf("%10.5s\n", &name[2]);
 }
