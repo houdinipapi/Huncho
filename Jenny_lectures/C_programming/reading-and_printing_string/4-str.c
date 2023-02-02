@@ -12,5 +12,5 @@ void main(void)
 	gets(name);
 
 	printf("%s\n", name);
-	printf("%s\n", &name);
+	printf("%s\n", &name[2]);
 }
