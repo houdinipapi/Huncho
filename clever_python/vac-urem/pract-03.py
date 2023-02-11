@@ -2,5 +2,5 @@
 
 team_list = ["Ge_dea", "Verena", "Bassiki"]
 print(team_list)
-team_list.append("Shuw", "Lasindru")
+team_list.append("Lasindru")
 print(team_list)
