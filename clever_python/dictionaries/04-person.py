@@ -7,4 +7,4 @@ person = {
         "course": "Software Engineering"
         }
 
-print(f"{person[first_name]}")
+print(f"{person['first_name']}")
