@@ -7,4 +7,4 @@ person = {
         "course": "Software Engineering"
         }
 
-print(f'{person["name"]}')
+print(f"Hi, my name is {person['name']}")
