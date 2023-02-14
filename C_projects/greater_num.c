@@ -13,8 +13,16 @@ void main(void)
 
 	if (i > j && i > k)
 	{
-		printf("%d is the greatest number\n");
+		printf("%d is the greatest number\n", i);
 	}
 	else if (j > i && j > k)
 	{
-		printf(
+		printf("%d is the greatest number\n", j);
+	}
+	else if (k > i && k > j)
+	{
+		printf("%d is the greatest number\n", k);
+	}
+	else
+		printf("All numbers are equal\n");
+}
