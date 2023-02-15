@@ -12,3 +12,7 @@ void main(void)
 	{
 		if (i == 'e')
 		{
+			printf("%c \n", i);
+		}
+	}
+}
