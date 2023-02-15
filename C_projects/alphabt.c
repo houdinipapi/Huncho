@@ -12,7 +12,8 @@ void main(void)
 	{
 		if (i != 'e' && i <= 'z')
 		{
-			printf("%c \n", i);
+			printf("%c ", i);
 		}
 	}
+	printf("\n");
 }
