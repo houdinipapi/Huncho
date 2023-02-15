@@ -10,7 +10,7 @@ void main(void)
 
 	for (i = 'a'; i >= 'a'; i++)
 	{
-		if (i != 'e')
+		if (i != 'e' && i <= 'z')
 		{
 			printf("%c \n", i);
 		}
