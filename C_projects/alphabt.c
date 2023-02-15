@@ -6,4 +6,9 @@
 
 void main(void)
 {
+	char a;
 
+	for(i = 'a'; i >= 'a'; i++)
+	{
+		if (i == 'e')
+		{
