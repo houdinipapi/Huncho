@@ -2,10 +2,10 @@
 
 print("Welcome to Houdini Safaris!!")
 age = int(input("How old are you? "))
-person_sharing = int(input("How many people are sharing the room? "))
 
 if age >= 18:
-    print("You can book a room.")
+    person_sharing = int(input("How many people are sharing the room? "))
+
     if person_sharing <= 1:
         bill = 150
         print("Your bill will be $150.")
