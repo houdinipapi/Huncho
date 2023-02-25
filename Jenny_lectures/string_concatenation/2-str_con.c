@@ -12,7 +12,8 @@ void main(void)
 	int len1, len2, i;
 
 	printf("Enter your first and second name:\n");
-	gets(first_name, second_name);
+	gets(first_name);
+	gets(second_name);
 
 	len1 = strlen(first_name);
 	len2 = strlen(second_name);
