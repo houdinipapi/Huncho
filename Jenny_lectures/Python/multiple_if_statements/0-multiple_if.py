@@ -22,4 +22,4 @@ if height >= 3:
     print(f"Your total bill is {bill}")
 else:
     print("You cannot ride!!")
-print("Thank you")
+print("Thank you!!")
