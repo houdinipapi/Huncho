@@ -17,10 +17,6 @@ elif pizza_size == 'L' or pizza_size == 'l':
     bill += 20
     print("Large Pizza price is $20")
 
-else:
-    print("ENTER CORRECT INPUT!!")
-    break
-
 
 add_pepperoni = input("Do you want pepperoni? (Y/N) ")
 if add_pepperoni == 'Y' or add_pepperoni == 'y':
