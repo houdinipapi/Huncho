@@ -21,14 +21,13 @@ e = lower_case_names.count('e')
 love = l + o + v + e
 
 love_percent = str(true) + str(love)
-int(love_percent)
 
 print(f"Your love percentage is {love_percent}")
 
-if love_percent < 10 or love_percent > 90:
+if int(love_percent) < 10 or int(love_percent) > 90:
     print("Perfect Match")
 
-elif love_percent > 40 and love_percent < 60:
+elif int(love_percent) > 40 and int(love_percent) < 60:
     print("Better Match")
 
 else:
