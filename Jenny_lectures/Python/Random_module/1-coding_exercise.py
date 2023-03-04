@@ -8,4 +8,4 @@ print(names_split)
 
 names_length = len(names_split)
 rand_name = random.randint(0, names_length - 1)
-print(names_split[rand_name])
+print(f"{names_split[rand_name]} will pay the bill.")
