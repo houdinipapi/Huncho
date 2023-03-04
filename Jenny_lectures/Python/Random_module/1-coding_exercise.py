@@ -7,5 +7,5 @@ names_split = names.split(" ")
 print(names_split)
 
 names_length = len(names_split)
-rand_name = random.randint(0, (names_length - 1))
-print(rand_name)
+rand_name = random.randint(0, names_length - 1)
+print(names_split[rand_name])
