@@ -12,4 +12,6 @@ row_col_num = input("Pick a row and column number: ")
 print(row_col_num)
 
 row_num = int(row_col_num[0])
+col_num = int(row_col_num[1])
 print(row_num)
+print(col_num)
