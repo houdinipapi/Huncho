@@ -7,3 +7,6 @@ row2 = [2, 2, 2]
 row3 = [3, 3, 3]
 
 print(f"{row1}\n{row2}\n{row3}")
+
+user_num = input("Enter two numbers: ")
+print(user_num)
