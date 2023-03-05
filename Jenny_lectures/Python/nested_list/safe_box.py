@@ -6,4 +6,4 @@ row1 = [1, 1, 1]
 row2 = [2, 2, 2]
 row3 = [3, 3, 3]
 
-print(row1\nrow2\nrow3)
+print(f"{row1} + \n + {row2} + \n + {row3}")
