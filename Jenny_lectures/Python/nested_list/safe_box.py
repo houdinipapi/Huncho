@@ -9,9 +9,9 @@ row3 = [3, 3, 3]
 print(f"{row1}\n{row2}\n{row3}")
 
 row_col_num = input("Pick a row and column number: ")
-print(row_col_num)
+#print(row_col_num)
 
 row_num = int(row_col_num[0])
 col_num = int(row_col_num[1])
-print(row_num)
-print(col_num)
+print(f"Row: {row_num}")
+print(f"Column: {col_num}")
