@@ -3,14 +3,19 @@
 
 /**
  * main - string reversal
+ * Return: 0
  */
 
-void main(void)
+int main(void)
 {
-	char s1[30], new_name[15];
+	char s1[30];
 
 	printf("Enter your name: ");
-	scanf("%s", s1);
+	gets(s1);
 
-	printf("%s\n", strrev(s1));
+	strrev(s1);
+
+	printf("%s\n", s1);
+
+	return(0);
 }
