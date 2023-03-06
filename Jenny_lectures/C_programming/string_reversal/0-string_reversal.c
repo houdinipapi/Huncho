@@ -12,6 +12,5 @@ void main(void)
 	printf("Enter your name: ");
 	scanf("%s", s1);
 
-	new_name = strrev(s1);
-	printf("%s\n", new_name);
+	printf("%s\n", strrev(s1));
 }
