@@ -15,7 +15,7 @@ void main(void)
 
 	name_len = strlen(name);
 
-	for (i = 0, j = (name_len - 1); i > (name_len / 2); i++, j--)
+	for (i = 0, j = (name_len - 1); i < (name_len / 2); i++, j--)
 	{
 		ch = name[i];
 		name[i] = name[j];
