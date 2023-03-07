@@ -22,3 +22,8 @@ int main(void)
 		str[i] = str[str_len - 1 - i];
 		str[str_len - 1 - i] = ch;
 	}
+
+	printf("%s\n", str);
+
+	return (0);
+}
