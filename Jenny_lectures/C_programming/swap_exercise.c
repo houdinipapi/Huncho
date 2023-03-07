@@ -2,7 +2,8 @@
 #include <string.h>
 
 /**
- * main - string reversal
+ * main - reverse a string
+ * Return - Always 0
  */
 
 int main(void)
