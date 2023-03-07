@@ -11,3 +11,7 @@ int main(void)
 	char str[30], ch;
 
 	printf("Enter your name: ");
+	gets(str);
+
+	str_len = strlen(str);
+	printf("%d\n", str_len);
