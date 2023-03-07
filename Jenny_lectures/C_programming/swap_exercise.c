@@ -7,3 +7,7 @@
 
 int main(void)
 {
+	int i, str_len;
+	char str[30], ch;
+
+	printf("Enter your name: ");
