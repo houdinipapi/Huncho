@@ -18,4 +18,7 @@ int main(void)
 
 	for (i = 0; i < (str_len / 2); i++)
 	{
-
+		ch = str[i];
+		str[i] = str[str_len - 1 - i];
+		str[str_len - 1 - i] = ch;
+	}
