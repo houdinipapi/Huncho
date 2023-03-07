@@ -15,3 +15,7 @@ int main(void)
 
 	str_len = strlen(str);
 	printf("%d\n", str_len);
+
+	for (i = 0; i < (str_len / 2); i++)
+	{
+
