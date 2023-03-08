@@ -13,9 +13,12 @@ void main(void)
 	printf("Enter a name with mixed uppercase & lowercase letters: ");
 	gets(str);
 
-	if (str[i] >= 'A' && str[i] <= 'Z')
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		str[i] += 32;
+		if (s[i] >= 'A' && s[i] <= 'Z')
+		{
+			s[i] += 32;
+		}
 	}
 	printf("%s\n", str);
 }
