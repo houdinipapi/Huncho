@@ -9,7 +9,7 @@
 int main(void)
 {
 	int i, j, str_len;
-	char ch, str_name;
+	char ch, str_name[30];
 
 	printf("Enter a name: ");
 	gets(str_name);
