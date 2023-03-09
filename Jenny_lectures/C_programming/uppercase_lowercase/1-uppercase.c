@@ -19,3 +19,6 @@ void main(void)
 		{
 			str[i] += 32;
 		}
+	}
+	printf("%s\n", str);
+}
