@@ -13,7 +13,7 @@ void main(void)
 	printf("Enter a name or word in lowercase: ");
 	gets(str);
 
-	for (i = 0; i != '\0'; i++)
+	for (i = 0; str[i] != '\0'; i++)
 	{
 		if (str[i] >= 'a' && str[i] <= 'z')
 		{
