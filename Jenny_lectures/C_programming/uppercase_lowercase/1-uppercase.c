@@ -15,4 +15,7 @@ void main(void)
 
 	for (i = 0; i != '\0'; i++)
 	{
-
+		if (i >= 'a' && i <= 'z')
+		{
+			str[i] += 32;
+		}
