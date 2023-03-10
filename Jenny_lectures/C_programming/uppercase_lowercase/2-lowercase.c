@@ -15,4 +15,4 @@ void main(void)
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		if
+		if (str[i] >= 'A' && str[i] <= 'Z')
