@@ -13,4 +13,6 @@ void main(void)
 	printf("Enter a string in uppercase characters: ");
 	gets(str);
 
-
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		if
