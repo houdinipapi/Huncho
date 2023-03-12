@@ -9,3 +9,4 @@ void main(void)
 	q = &b;
 
 	printf("Address of a is %x\n", &a);
+}
