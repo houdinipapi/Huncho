@@ -6,13 +6,10 @@
 
 void main(void)
 {
-	int a = 10;
-	int b = 15;
-	int *p;
-	int *q;
-
-	*p = &a;
-	*q = &b;
+	unsigned int a = 10;
+	unsigned int b = 15;
+	int *p = &a;
+	int *q = &b;
 
 	printf("Address of a is %x\n", &a);
 }
