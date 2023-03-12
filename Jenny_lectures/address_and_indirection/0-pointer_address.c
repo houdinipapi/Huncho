@@ -11,5 +11,5 @@ void main(void)
 	int *p = &a;
 	int *q = &b;
 
-	printf("Address of a is %x\n", &a);
+	printf("Address of a is %u\n", &a);
 }
