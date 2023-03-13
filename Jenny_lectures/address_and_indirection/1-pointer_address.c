@@ -16,5 +16,5 @@ void main(void)
 
 	printf("a is %d\n", *p);
 	printf("a is %d\n", a);
-	printf("q is %d\n", q);
+	printf("b is %d\n", *q);
 }
