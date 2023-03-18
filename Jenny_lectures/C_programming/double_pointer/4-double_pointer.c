@@ -16,5 +16,7 @@ void main(void)
 	printf("a = %d\n", **q);
 	printf("a = %d\n", ***r);
 
-	printf("Address of a = %x\t%x", &a, p);
+	printf("Address of a = %x\t%x\n", &a, p);
+	printf("Address of p = %x\t%x\n", &p, q);
+	printf("Address of q = %x\t%x\n", &q, r);
 }
