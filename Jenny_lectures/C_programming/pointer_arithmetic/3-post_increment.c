@@ -10,5 +10,5 @@ void main(void)
 	int *p;
 
 	p = arr;
-	printf("%d\n", *p++, *p++);
+	printf("%d\t%d\n", *p++, *p++);
 }
