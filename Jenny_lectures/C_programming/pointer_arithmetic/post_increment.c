@@ -11,5 +11,5 @@ void main(void)
 
 	p = arr;
 	p++;
-	printf("%d\n", p);
+	printf("%d\n", *p);
 }
