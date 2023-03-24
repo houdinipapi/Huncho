@@ -17,14 +17,14 @@ else:
     if user_choice == comp_choice:
         print("It\'s a TIE!!")
 
-    if user_choice == 0 and comp_choice == 2:
+    elif user_choice == 0 and comp_choice == 2:
         print("YOU WIN!!")
 
-    if user_choice == 2 and comp_choice == 0:
+    elif user_choice == 2 and comp_choice == 0:
         print("COMP WINS!!!")
 
-    if user_choice > comp_choice:
+    elif user_choice > comp_choice:
         print("YOU WIN!!")
 
-    if comp_choice > user_choice:
+    elif comp_choice > user_choice:
         print("COMP WINS")
