@@ -21,10 +21,10 @@ else:
         print("YOU WIN!!")
 
     elif user_choice == 2 and comp_choice == 0:
-        print("COMP WINS!!!")
+        print("COMP WINS!!")
 
     elif user_choice > comp_choice:
         print("YOU WIN!!")
 
     elif comp_choice > user_choice:
-        print("COMP WINS")
+        print("COMP WINS!!")
