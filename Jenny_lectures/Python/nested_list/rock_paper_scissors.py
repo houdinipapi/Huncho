@@ -10,6 +10,9 @@ comp_choice = random.randint(0, 2)
 print(f"The computer's choice is {comp_choice}")
 print(f"Your choice is {user_choice}")
 
+if user_choice < 0 or user_choice >= 3:
+    print("PICK THE CORRECT NUMBER!!!")
+
 if user_choice == comp_choice:
     print("It\'s a TIE!!")
 
@@ -24,6 +27,3 @@ if user_choice > comp_choice:
 
 if comp_choice > user_choice:
     print("COMP WINS")
-
-if user_choice < 0 or user_choice >= 3:
-    print("PICK THE CORRECT NUMBER!!!")
