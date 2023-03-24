@@ -11,6 +11,7 @@ print(f"The computer's choice is {comp_choice}")
 print(f"Your choice is {user_choice}")
 
 if user_choice == comp_choice:
-    print("It\'s a TIE!!");
+    print("It\'s a TIE!!")
 
-if user_choice 
+if user_choice == 0 and comp_choice == 2:
+    print("YOU WIN!!")
