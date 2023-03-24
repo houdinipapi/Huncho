@@ -24,3 +24,6 @@ if user_choice > comp_choice:
 
 if comp_choice > user_choice:
     print("COMP WINS")
+
+if user_choice < 0 or user_choice >= 3:
+    print("PICK THE CORRECT NUMBER!!!")
