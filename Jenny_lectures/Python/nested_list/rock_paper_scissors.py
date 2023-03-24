@@ -15,3 +15,6 @@ if user_choice == comp_choice:
 
 if user_choice == 0 and comp_choice == 2:
     print("YOU WIN!!")
+
+if user_choice == 2 and comp_choice == 0:
+    print("COMP WINS!!!")
