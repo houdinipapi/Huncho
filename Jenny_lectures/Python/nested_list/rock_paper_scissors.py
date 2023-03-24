@@ -13,17 +13,18 @@ print(f"Your choice is {user_choice}")
 if user_choice < 0 or user_choice >= 3:
     print("PICK THE CORRECT NUMBER!!!")
 
-if user_choice == comp_choice:
-    print("It\'s a TIE!!")
+else:
+    if user_choice == comp_choice:
+        print("It\'s a TIE!!")
 
-if user_choice == 0 and comp_choice == 2:
-    print("YOU WIN!!")
+    if user_choice == 0 and comp_choice == 2:
+        print("YOU WIN!!")
 
-if user_choice == 2 and comp_choice == 0:
-    print("COMP WINS!!!")
+    if user_choice == 2 and comp_choice == 0:
+        print("COMP WINS!!!")
 
-if user_choice > comp_choice:
-    print("YOU WIN!!")
+    if user_choice > comp_choice:
+        print("YOU WIN!!")
 
-if comp_choice > user_choice:
-    print("COMP WINS")
+    if comp_choice > user_choice:
+        print("COMP WINS")
