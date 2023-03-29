@@ -6,8 +6,8 @@
 
 void main(void)
 {
-	void *ptr = &a;
 	int a = 12;
+	void *ptr = &a;
 
 	printf("%d\n", *(int *)ptr);
 }
