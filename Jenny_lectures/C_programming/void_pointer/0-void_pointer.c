@@ -8,4 +8,6 @@ void main(void)
 {
 	void *ptr;
 	int a = 12;
+
+	printf("%d\n", 
 }
