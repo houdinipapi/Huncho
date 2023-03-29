@@ -9,5 +9,5 @@ void main(void)
 	char ch = 'a';
 	void *ptr = &ch;
 
-	printf("%c\n", *ptr);
+	printf("%c\n", *(char *) ptr);
 }
