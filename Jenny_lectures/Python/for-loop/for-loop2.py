@@ -6,4 +6,4 @@ for loop
 
 name = "Houdini"
 for i in name:
-    print(name)
+    print(i)
