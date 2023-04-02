@@ -8,7 +8,7 @@ nums = [2, 4, 6, 8, 24]
 
 for i in nums:
     print(i)
-    if i % 3:
+    if i % 3 == 0:
         break
 else:
     print("Successfully Iterated")
