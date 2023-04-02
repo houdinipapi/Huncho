@@ -11,4 +11,4 @@ for i in nums:
     square = i ** 2
     print(square)
     square_list.append(square)
-print(square_list)
+print(f"The new list is: {square_list}")
