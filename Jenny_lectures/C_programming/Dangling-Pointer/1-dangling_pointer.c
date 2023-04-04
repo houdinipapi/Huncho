@@ -9,6 +9,7 @@ void main(void)
 {
     int * ptr = (int *)malloc(sizeof(int));
     *ptr = 10;
+    
     printf("%d\n", *ptr);
 
     free(ptr);
