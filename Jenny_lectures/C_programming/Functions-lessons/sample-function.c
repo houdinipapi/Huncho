@@ -5,7 +5,7 @@
  * sum() - functio that adds two integers
  */
 
-void sum(int x, int y);
+int sum(int x, int y);
 
 void main(void)
 {
@@ -13,15 +13,14 @@ void main(void)
 	int x = 15;
 	int y = 20;
 
-	sum(x, y);
+	total = sum(x, y);
 
-	printf("Sum is %d\n", total);
+	printf("(Main Function) Sum is %d\n", total);
 }
 
-void sum(int x, int y)
+int sum(int x, int y)
 {
-	int total;
-	total = x + y;
+	return x + y;
 
-	printf("x = %d\ny = %d\n", x, y);
+	printf("(Called Function) x = %d\ny = %d\n", x, y);
 }
