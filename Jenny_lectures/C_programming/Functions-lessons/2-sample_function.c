@@ -1,13 +1,11 @@
 #include <stdio.h>
 
-void sum(int *a, int *b)
+// Call by reference
+
+void sum(int* a, int* b)
 {
-	int result;
-	result = a + b;
-	int *ptr1 = &a;
-	int *ptr2 = &b;
-	a = 5;
-	b = 10;
+	*a = 5;
+	*b = 10;
 
 	printf("(Call Function)\na = %d\nb = %d\n", *a, *b);
 }
@@ -15,6 +13,6 @@ void sum(int *a, int *b)
 void main(void)
 {
 	int a = 10, b = 5;
-	sum(a, b);
+	sum(&a, &b);
 	printf("(Main Function)\na = %d\nb = %d\n", a, b);
 }
