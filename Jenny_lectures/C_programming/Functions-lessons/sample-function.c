@@ -20,7 +20,6 @@ void main(void)
 
 int sum(int x, int y)
 {
-	return x + y;
-
 	printf("(Called Function) x = %d\ny = %d\n", x, y);
+	return x + y;
 }
