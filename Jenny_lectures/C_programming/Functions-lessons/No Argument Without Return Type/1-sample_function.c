@@ -32,3 +32,36 @@ void sum(void)
 	sum = a + b;
 	printf("Sum = %d\n", sum);
 }
+
+void difference(void)
+{
+	int x, y, difference;
+
+	printf("Enter two numbers:\n");
+	scanf("%d%d", &x, &y);
+
+	difference = x - y;
+	printf("Difference = %d\n", difference);
+}
+
+void product(void)
+{
+	int j, k, product;
+
+	printf("Enter two numbers:\n");
+	scanf("%d%d", &j, &k);
+
+	product = j * k;
+	printf("Product = %d\n", product);
+}
+
+void division(void)
+{
+	float m, n, division;
+
+	printf("Enter two numbers:\n");
+	scanf("%f%f", &m, &n);
+
+	division = m / n;
+	printf("Division = %f\n", division);
+}
