@@ -16,7 +16,7 @@ void main(void)
 void calculator(void)
 {
 	int a, b;
-	int sum, diff, prod, div;
+	int sum, diff, prod, division;
 
 	printf("Enter two numbers:\n");
 	scanf("%d%d", &a, &b);
@@ -24,7 +24,7 @@ void calculator(void)
 	sum = a + b;
 	diff = a - b;
 	prod = a * b;
-	div = a / b;
+	division = a / b;
 
-	printf("Sum = %d\nDifference = %d\nProduct = %d\nDivision = %d\n", sum, diff, prod, div);
+	printf("Sum = %d\nDifference = %d\nProduct = %d\nDivision = %d\n", sum, diff, prod, division);
 }
