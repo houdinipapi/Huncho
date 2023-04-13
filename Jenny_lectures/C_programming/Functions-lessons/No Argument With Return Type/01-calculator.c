@@ -10,3 +10,9 @@ void main(void)
 {
 	calculator();
 }
+
+/**
+ * calculator - simple calculations
+ */
+
+
