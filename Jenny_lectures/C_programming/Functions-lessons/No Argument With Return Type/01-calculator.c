@@ -13,6 +13,10 @@ void main(void)
 
 /**
  * calculator - simple calculations
+ * Return: Success
  */
 
-
+int calculator(void)
+{
+	int a, b;
+	int sum, prod, diff, division;
