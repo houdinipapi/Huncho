@@ -19,7 +19,10 @@ void main(void)
 int calculator(void)
 {
 	int a, b;
+	char c;
 	int sum, prod, diff, division;
 
-	printf("Enter two numbers:\n");
-	scanf("%d%d", &a, &b);
+	printf("Enter two numbers and a calculation sign:\n");
+	scanf("%d%d%c", &a, &b, &c);
+
+
