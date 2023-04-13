@@ -20,3 +20,6 @@ int calculator(void)
 {
 	int a, b;
 	int sum, prod, diff, division;
+
+	printf("Enter two numbers:\n");
+	scanf("%d%d", &a, &b);
