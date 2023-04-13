@@ -23,7 +23,7 @@ int calculator(void)
 	int sum, prod, diff, division;
 
 	printf("Enter two numbers and a calculation sign:\n");
-	scanf("%d%d%c", &a, &b, &c);
+	scanf("%d%d%c", &a, &b, c);
 
 	if (c == '+')
 	{
