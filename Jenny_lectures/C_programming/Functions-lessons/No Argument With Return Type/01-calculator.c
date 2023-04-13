@@ -31,4 +31,6 @@ int calculator(void)
 	else if (c == '-') {
 		return a - b;
 	}
-
+	else if (c == '*') {
+		return a * b;
+	}
