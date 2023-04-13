@@ -7,3 +7,6 @@ int calculator(void);
  */
 
 void main(void)
+{
+	calculator();
+}
