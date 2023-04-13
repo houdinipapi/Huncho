@@ -26,11 +26,17 @@ int calculator(void)
 	scanf("%d%d%c", &a, &b, &c);
 
 	if (c == '+') {
-		return a + b;
+		return (a + b);
 	}
 	else if (c == '-') {
-		return a - b;
+		return (a - b);
 	}
 	else if (c == '*') {
-		return a * b;
+		return (a * b);
 	}
+	else if (c == '/') {
+		return (a / b);
+	}
+	else
+		return ("ERROR");
+}
