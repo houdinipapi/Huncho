@@ -18,8 +18,7 @@ void main(void)
 
 int calculator(void)
 {
-	int a, b;
-	char c;
+	int a, b, c;
 	int sum, prod, diff, division;
 
 	printf("Enter two numbers and a calculation sign:\n");
