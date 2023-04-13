@@ -42,5 +42,5 @@ int calculator(void)
 		return (a / b);
 	}
 	else
-		return ("ERROR");
+		printf("Enter Valid Operator\n");
 }
