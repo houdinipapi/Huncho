@@ -25,16 +25,20 @@ int calculator(void)
 	printf("Enter two numbers and a calculation sign:\n");
 	scanf("%d%d%c", &a, &b, &c);
 
-	if (c == '+') {
+	if (c == '+')
+	{
 		return (a + b);
 	}
-	else if (c == '-') {
+	else if (c == '-')
+	{
 		return (a - b);
 	}
-	else if (c == '*') {
+	else if (c == '*')
+	{
 		return (a * b);
 	}
-	else if (c == '/') {
+	else if (c == '/')
+	{
 		return (a / b);
 	}
 	else
