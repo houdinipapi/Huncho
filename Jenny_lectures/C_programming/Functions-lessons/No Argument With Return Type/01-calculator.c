@@ -18,25 +18,26 @@ void main(void)
 
 int calculator(void)
 {
-	int a, b, c;
+	int a, b;
+	char c;
 	int sum, prod, diff, division;
 
-	printf("Enter two numbers and a calculation sign:\n");
-	scanf("%d%d%d", &a, &b, &c);
+	printf("Enter two numbers and a calculation sign(sum, prod, diff, division):\n");
+	scanf("%d%d%s", &a, &b, c);
 
-	if (c == '+')
+	if (c == 'sum')
 	{
 		return (a + b);
 	}
-	else if (c == '-')
+	else if (c == 'diff')
 	{
 		return (a - b);
 	}
-	else if (c == '*')
+	else if (c == 'prod')
 	{
 		return (a * b);
 	}
-	else if (c == '/')
+	else if (c == 'division')
 	{
 		return (a / b);
 	}
