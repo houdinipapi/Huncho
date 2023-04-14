@@ -8,7 +8,10 @@ int calculator(void);
 
 void main(void)
 {
-	calculator();
+	int x;
+
+	x = calculator();
+	printf("Answer = %d\n", x);
 }
 
 /**
