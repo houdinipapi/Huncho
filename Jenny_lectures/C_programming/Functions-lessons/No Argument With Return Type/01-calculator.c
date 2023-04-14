@@ -18,29 +18,28 @@ void main(void)
 
 int calculator(void)
 {
-	int a, b;
-	char c;
-	int sum, prod, diff, division;
+	int a, b, c;
+	//int sum, prod, diff, division;
 
-	printf("Enter two numbers and a calculation sign(sum, prod, diff, division):\n");
-	scanf("%d%d%s", &a, &b, c);
+	printf("Enter two numbers and a calculation index(1.sum, 2.prod, 3.diff, 4.division):\n");
+	scanf("%d%d%d", &a, &b, &c);
 
-	if (c == 'sum')
+	if (c == 1)
 	{
 		return (a + b);
 	}
-	else if (c == 'diff')
+	else if (c == 3)
 	{
 		return (a - b);
 	}
-	else if (c == 'prod')
+	else if (c == 2)
 	{
 		return (a * b);
 	}
-	else if (c == 'division')
+	else if (c == 4)
 	{
 		return (a / b);
 	}
 	else
-		printf("Enter Valid Operator\n");
+		printf("Enter Valid Operator Index\n");
 }
