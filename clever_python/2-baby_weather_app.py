@@ -20,4 +20,5 @@ def baby_weather():
     else:
         return fail
 
+
 print(baby_weather())
