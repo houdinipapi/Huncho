@@ -5,7 +5,7 @@ def baby_weather():
     weather = int(input("Pick a number between 1 to 4: "))
     sun = "It is SUNNY!\nWear your sunglasses!"
     rain = "It is RAINY!\nCarry an umbrella!"
-    cloud = "It is CLOUDY!\nWear a warm jacket!"
+    cloud = 'It is CLOUDY!\nWear a warm jacket!'
     thunder = "THUNDERSTORMS & LIGHTNING!\nStay indoors!"
     fail = "INCORRECT INPUT!!"
 
