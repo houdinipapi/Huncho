@@ -8,4 +8,4 @@ def double_num(number):
     return number * 2
 
 
-print(list(map(double_num, [8, 9, 5])))
+print(list(map(double_num, [9, 5, 3])))
