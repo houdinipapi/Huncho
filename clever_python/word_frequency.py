@@ -19,3 +19,7 @@ def word_frequency(phrase: str) -> dict:
 
 
 print(word_frequency("Hello There Hello There hello there"))
+
+
+# Taking user's input
+print(word_frequency(input("Please enter your phrase: ")))
