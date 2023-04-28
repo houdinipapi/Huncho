@@ -3,7 +3,7 @@
 import random
 
 
-def random_number(num_range):
+def random_number():
     num_range = choice(range(1, 11))
 
     return num_range
