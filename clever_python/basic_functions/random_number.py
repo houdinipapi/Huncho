@@ -8,4 +8,4 @@ def random_number(num_range):
 
     return num_range
 
-print(random_number(num_range))
+print(random_number())
