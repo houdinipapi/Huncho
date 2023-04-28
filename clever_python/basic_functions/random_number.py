@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-import random
+from random import choice
 
 
 def random_number():
