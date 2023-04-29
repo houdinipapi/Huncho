@@ -13,4 +13,6 @@ def is_even(numbers) -> list:
 
 print(list(filter(is_even, num_list)))
 
+# This function can be summarized using lambda:
 
+print(list(filter(lambda numbers: numbers % 2 == 0, num_list)))
