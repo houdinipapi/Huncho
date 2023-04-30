@@ -12,3 +12,9 @@ def try_and_except():
         new_user_input = -1
 
     if new_user_input > 0:
+        return "INTEGER"
+    else:
+        return "STRING"
+
+
+print(try_and_except())
