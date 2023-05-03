@@ -465,3 +465,21 @@ for line in f_hand:
     line = line.rstrip()
     if re.search('^print', line):  # --> Specifically searches for lines that begin with print
         print('Starts with:', line)
+
+
+# Matching and Extracting data using RegEx
+x = 'My 2 favorite numbers are 7 and 9'
+y = re.findall('[0-9]+', x)
+print(y)  # --> prints ['2', '7', '9']
+y = re.findall('[AEIOU]+', x)
+print(y)  # --> Returns an empty list
+
+
+# Greed matching (+ and *)
+x = 'From: Using the: character'
+y = re.findall('^F.+:', x)  # --> Returns 'From: Using the:'
+print(y)
+
+
+# Non-Greedy matching (+? and *?)
+
