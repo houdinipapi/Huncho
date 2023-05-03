@@ -1,3 +1,6 @@
+# --IMPORTED MODULES
+import re
+
 # # This is a sample Python script.
 #
 # # Press Shift+F10 to execute it or replace it with your code.
@@ -14,7 +17,6 @@
 #     print_hi('PyCharm')
 #
 # # See PyCharm help at https://www.jetbrains.com/help/pycharm/
-
 
 # FINDING LARGEST NUMBER
 
@@ -445,3 +447,21 @@ for value, key in lst[:10]:  # --> Checking for the top 10 words i.e., from 0th 
 print("ALTERNATIVE METHOD:-")
 c = {'the': 50, 'one': 20, 'of': 78, 'a': 125}
 print(sorted([(v, k) for k, v in c.items()]))  # --> Will print the list of tuples in ascending order
+
+
+# --REGULAR EXPRESSIONS:  --> The module is imported at the top of the file.
+f_name = input('Enter a file name: ')
+f_hand = open(f_name)
+
+for line in f_hand:
+    line = line.rstrip()
+    if re.search('print', line):  # --> Searches for lines that have 'print' inside them
+        print(line)
+
+f_name = input('Enter a file name: ')
+f_hand = open(f_name)
+
+for line in f_hand:
+    line = line.rstrip()
+    if re.search('^print', line):  # --> Specifically searches for lines that begin with print
+        print('Starts with:', line)
