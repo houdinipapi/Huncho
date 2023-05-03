@@ -10,10 +10,11 @@ def word_frequency(phrase: str) -> dict:
     words = phrase.split()
 
     for word in words:
-        if word not in result:
-            result[word] = 1
-        else:
-            result[word] += 1
+        # if word not in result:
+        #     result[word] = 1
+        # else:
+        #     result[word] += 1
+        result[word] = result.get(word, 0) + 1
 
     return result
 
