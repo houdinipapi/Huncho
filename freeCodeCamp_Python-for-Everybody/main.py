@@ -477,9 +477,19 @@ print(y)  # --> Returns an empty list
 
 # Greed matching (+ and *)
 x = 'From: Using the: character'
-y = re.findall('^F.+:', x)  # --> Returns 'From: Using the:'
+y = re.findall('^F.+:', x)  # --> Returns ['From: Using the:']
 print(y)
 
 
 # Non-Greedy matching (+? and *?)
+y = re.findall('^F.+?:', x)
+print(y)  # --> prints ['From:']
 
+
+# Fine-tuning String Extraction
+x = 'From papihoudini@github.com Sat Jan 6 09:15:39 2008'
+y = re.findall('\\S+@\\S+', x)  # --> Returns ['papihoudini@github.com'] --> Used \\ to ignore
+print(y)
+
+y = re.findall('^From (\\S+@\\S+)', x)
+print(y)
