@@ -513,4 +513,3 @@ for line in f_hand:
     num = stuff[0]
     num_list.append(num)
 print('Maximum string:', max(num_list))  # --> Finding the maximum string
-
