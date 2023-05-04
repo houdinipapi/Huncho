@@ -515,17 +515,27 @@ for line in f_hand:
     num_list.append(num)
 print('Maximum string:', max(num_list))  # --> Finding the maximum string
 
-# HTTP REQUEST IN PYTHON
+# --HTTP REQUEST IN PYTHON-- #
 
 print("MAKING A HTTP REQUEST IN PYTHON:")
-my_sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-my_sock.connect(('data.pr4e.org', 80))
-cmd = 'GET http://data.pr4e.org/romeo.txt HTTP/1.0\n\n'.encode()
-my_sock.send(cmd)
 
+# create a socket object
+my_sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+# connect to the server
+server_address = ('data.pr4e.org', 80)
+my_sock.connect(server_address)
+
+# send an HTTP GET request
+request = b"GET /authors.txt HTTP/1.0\r\n\r\n"
+my_sock.send(request)
+
+# receive data from the server and print it to the console
 while True:
     data = my_sock.recv(512)
     if len(data) < 1:
         break
-    print(data.decode())
+    print(data.decode(), end='')
+
+# close the socket connection
 my_sock.close()
