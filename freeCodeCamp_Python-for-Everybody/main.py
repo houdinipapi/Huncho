@@ -512,4 +512,5 @@ for line in f_hand:
         continue
     num = stuff[0]
     num_list.append(num)
-print('Maximum:', max(num_list))  # --> Finding the maximum string
+print('Maximum string:', max(num_list))  # --> Finding the maximum string
+
