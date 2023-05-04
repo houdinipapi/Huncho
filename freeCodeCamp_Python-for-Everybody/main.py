@@ -497,3 +497,19 @@ print(y)
 # Even Cooler Regex version
 y = re.findall('^From .*@([^ ]*)', x)
 print(y)
+
+
+# Spam Confidence  --> Finding the string with most occurrences in lines starting with 'print'
+f_name = input("Enter file name: ")
+f_hand = open(f_name)
+
+num_list = list()
+for line in f_hand:
+    line = line.rstrip()
+    stuff = re.findall('print ([a-z.]+)', line)  # --> RegEx to find a string in lines beginning with 'print'
+
+    if len(stuff) != 1:
+        continue
+    num = stuff[0]
+    num_list.append(num)
+print('Maximum:', max(num_list))  # --> Finding the maximum string
