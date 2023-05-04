@@ -493,3 +493,7 @@ print(y)
 
 y = re.findall('^From (\\S+@\\S+)', x)
 print(y)
+
+# Even Cooler Regex version
+y = re.findall('^From .*@([^ ]*)', x)
+print(y)
