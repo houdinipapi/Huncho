@@ -1,7 +1,9 @@
 # <-- LEARNING ABOUT NETWORKED PROGRAMS --> #
 
 import socket
-import urllib.request, urllib.parse, urllib.error
+import urllib.request
+import urllib.parse
+import urllib.error
 
 # Creating an HTTP Request in Python
 my_sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -37,3 +39,14 @@ for line in f_hand:
     for word in words:
         counts[word] = counts.get(word, 0) + 1
 print(counts)
+
+
+# Reading Web-pages
+
+f_hand = urllib.request.urlopen('http://www.dr-chuck.com/page1.htm')
+
+for line in f_hand:
+    print(line.decode().strip())  # --> reading through webpages
+
+
+# -- Scraping Web Pages -- #
