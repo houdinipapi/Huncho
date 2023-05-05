@@ -150,3 +150,53 @@ for item in new_info:
     print('Name:', item['name'])
     print('ID:', item['id'])
     print('Attribute:', item['x'])
+
+
+# Reading data from Google Maps API
+api_key = False
+
+if api_key is False:
+    api_key = 42
+    service_url = 'http://py4e-data.dr-chuck.net/json?'
+else:
+    service_url = 'https://maps.googleapis.com/maps/api/geocode/json?'
+
+# Ignoring SSL certificate errors
+ctx = ssl.create_default_context()
+ctx.check_hostname = False
+ctx.verify_mode = ssl.CERT_NONE
+
+while True:
+    address = input('Enter your address: ')
+    if len(address) < 1:
+        break
+
+    parameters = dict()
+    parameters['address'] = address
+    if api_key is not False:
+        parameters['key'] = api_key
+
+    url = service_url + urllib.parse.urlencode(parameters)
+
+    print('Retrieving', url)
+    new_url_open = urllib.request.urlopen(url)
+    data = new_url_open.read().decode()
+    print('Retrieved:', len(data), 'characters')
+
+    try:
+        js = json.loads(data)
+    except:
+        js = None
+
+    if not js or 'status' not in js or js['status'] != 'OK':
+        print('=== Failed To Retrieve ===')
+        print(data)
+        continue
+
+    print(json.dumps(js, indent=4))
+
+    lat = js["results"][0]["geometry"]["location"]["lat"]
+    lng = js["results"][0]["geometry"]["location"]["lng"]
+    print('Latitude:', lat, 'Longitude:', lng)
+    location = js['results'][0]['formatted_address']
+    print('Location:', location)
