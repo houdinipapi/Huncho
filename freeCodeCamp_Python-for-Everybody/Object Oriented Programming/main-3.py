@@ -54,3 +54,51 @@ an.party()
 
 an = 42  # 'New value is assigned to an' Just before this, the destruction happens to create room for the new value.
 print('Now "an" contains', an)
+
+
+# --> INHERITANCE <-- #
+# Mantra:- Write one and use it many times
+# - The new class(child) has all the capabilities of the old class(parent) and then some more.
+# - The subclasses are more specialized versions of a class,
+#   which inherit attributes and behaviors from their parent classes,
+#   and can introduce their own.
+
+class PartyAnimal:  # --> Parent
+    x = 0
+
+    def __init__(self, nam):
+        self.name = nam
+        print(self.name, "constructed")
+
+    def party(self):
+        self.x += 1
+        print(self.name, "party count", self.x)
+
+
+class FootballFan(PartyAnimal):  # --> Child inherits the properties of the Parent
+    points = 0
+
+    def touchdown(self):
+        self.points += 7
+        self.party()
+
+        print(self.name, "points", self.points)
+
+
+new = FootballFan("Papi")
+new.touchdown()
+new.touchdown()
+new.touchdown()
+
+new = PartyAnimal("Houdini")
+new.party()
+new.party()
+new.party()
+
+# --- DEFINITIONS -- #
+# Class - A template.
+# Attribute - A variable within a class.
+# Method - A function within a class.
+# Object - A particular instance of a class.
+# Constructor - Code that runs when an object is created.
+# Inheritance - The ability to extend a class to make a new class
