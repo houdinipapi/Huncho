@@ -6,6 +6,8 @@ import urllib.parse
 import urllib.error
 import ssl
 from bs4 import BeautifulSoup
+import xml.etree.ElementTree as ET
+import json
 
 # Creating an HTTP Request in Python
 my_sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -52,7 +54,7 @@ for line in f_hand:
 
 
 # -- Scraping Web Pages -- #
-url = input('Enter a link: ')
+url = 'https://twitter.com/home'
 
 # Ignoring SSL Certificate errors
 ctx = ssl.create_default_context()
@@ -66,3 +68,65 @@ soup = BeautifulSoup(html, 'html.parser')
 tags = soup('a')
 for tag in tags:
     print(tag.get('href', None))
+
+
+# --> XML <-- #
+
+# This is an XML code  --> Python will be reading through this code
+data = '''
+<person>
+    <name>Houdini</name>
+    <phone type="international">
+        +245 197 450 116
+    </phone>
+    <email hide="yes"/>
+</person>'''
+
+tree = ET.fromstring(data)
+print('Name:', tree.find('name').text)  # Python extracting the name from the XML code
+print('Attribute:', tree.find('email').get('hide'))  # Extracting the attribute
+
+XML_input = '''
+<stuff>
+    <users>
+        <user x='2'>
+            <id>001</id>
+            <name>Cliff</name>
+        </user>
+        <user x='7'>
+            <id>009</id>
+            <name>Papi</name>
+        </user>
+    </users>
+</stuff>'''
+
+stuff = ET.fromstring(XML_input)  # --> Getting the info in string format from XML
+lst = stuff.findall('users/user')  # --> Finding all user in users and storing it in a list ==> '/users/user' is a path
+print('User count:', len(lst))  # --> Printing the length of the list
+
+for item in lst:  # --> Looping through the created list
+    print('Name:', item.find('name').text)  # --> Finding the name element and printing the text held within it.
+    print('ID:', item.find('id').text)  # --> Finding the id element and printing the text within it.
+    print('Attribute:', item.get('x'))  # --> Getting the attribute that is within an element.
+
+# --> JSON (JavaScript Object Notation) <-- #
+
+# The code below is in JSON format --> Always use double quotes
+# data in this case is an object NOT a dictionary
+data = ''' {
+    "name": "My Name",
+    "phone": {
+        "type": "international",
+        "number": "+752 453 234 893"
+    },
+    "email": {
+        "hide": "yes"
+    }
+}'''
+
+info = json.loads(data)  # --> This is decoding the data presented in JSON format.
+print('Name:', info["name"])  # --> Printing the property ==> Resembles a dictionary whereby we have key value pairs.
+print('Hide:', info["email"]["hide"])  # --> Accessing the hide property which is within the email property.
+
+
+
