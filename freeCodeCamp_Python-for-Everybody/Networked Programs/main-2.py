@@ -195,8 +195,8 @@ while True:
 
     print(json.dumps(js, indent=4))
 
-    lat = js["results"][0]["geometry"]["location"]["lat"]
-    lng = js["results"][0]["geometry"]["location"]["lng"]
-    print('Latitude:', lat, 'Longitude:', lng)
+    latitude = js["results"][0]["geometry"]["location"]["lat"]
+    longitude = js["results"][0]["geometry"]["location"]["lng"]
+    print('Latitude:', latitude, 'Longitude:', longitude)
     location = js['results'][0]['formatted_address']
     print('Location:', location)
