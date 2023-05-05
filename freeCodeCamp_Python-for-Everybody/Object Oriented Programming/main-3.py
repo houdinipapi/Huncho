@@ -102,3 +102,4 @@ new.party()
 # Object - A particular instance of a class.
 # Constructor - Code that runs when an object is created.
 # Inheritance - The ability to extend a class to make a new class
+# --- END --- #
