@@ -129,4 +129,24 @@ print('Name:', info["name"])  # --> Printing the property ==> Resembles a dictio
 print('Hide:', info["email"]["hide"])  # --> Accessing the hide property which is within the email property.
 
 
+# N/B:--> JSON represents data as nested "lists" and "dictionaries"
 
+# Decoding an JSON object in a list
+JSON_input = '''[
+    { "id": "001",
+      "x": "2",
+      "name": "My Name"
+    },
+    { "id": "009",
+      "x": "7",
+      "name": "Second Name"
+    }
+]'''
+
+new_info = json.loads(JSON_input)  # --> Parsing a JSON string into a Python object.
+print('User Count:', len(new_info))  # --> Calculating the length of the list
+print(new_info)
+for item in new_info:
+    print('Name:', item['name'])
+    print('ID:', item['id'])
+    print('Attribute:', item['x'])
