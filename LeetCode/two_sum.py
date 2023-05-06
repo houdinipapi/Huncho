@@ -23,13 +23,13 @@ def two_sum(nums, target):
     # >>> 1 Chulo
     # >>> 2 Houdini
 
-    for index, num in enumerate(nums):  # --> Iterate over each number in the list.
+    for i, num in enumerate(nums):  # --> Iterate over each number in the list.
         complement = target - num
 
         if complement in num_table:  # --> Check if the complement of the current number is in the dictionary.
-            return [num_table[complement], index]  # --> Return the indices of the two numbers.
+            return [num_table[complement], i]  # --> Return the indices of the two numbers.
 
-        num_table[num] = index  # --> Add the current number to the dictionary.
+        num_table[num] = i  # --> Add the current number to the dictionary.
 
     return []  # --> If no solution is found, return an empty list.
 
