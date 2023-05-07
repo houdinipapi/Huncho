@@ -20,3 +20,8 @@ print(is_palindrome(787))
 # - and then compares it to the original string using the '==' operator.
 # - If both values match, the function returns 'True', meaning that the input is a palindrome.
 # - Otherwise it returns 'False'.
+
+
+# -- Sample -- #
+name = input('Enter your name: ')
+print('Your reversed name is:', name[::-1])  # --> Testing string reversal
