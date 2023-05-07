@@ -30,3 +30,15 @@ def longest_common_prefix(strs: list[str]) -> str:
 
 
 print(longest_common_prefix(['just', 'jug', 'jump']))
+
+# --- SOLUTION EXPLANATION --- #
+
+# The function takes a list of strings 'strs' as an input.
+# It first checks if the given list is empty.
+# If the list is empty, it returns an empty string since there can be no common prefix in an empty list.
+# If the given list is not empty, the function initializes 'prefix' to be the first string in the list.
+# The function then loops through each string in the list. N/B:- It starts looping from the second string onwards.
+# The function removes characters from 'prefix' until it is a prefix of the current string 's'.
+# If 'prefix' becomes empty, then there is no common prefix, thus an empty string is returned.
+
+# --- END --- #
