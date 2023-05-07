@@ -44,4 +44,15 @@ def is_valid(s: str) -> bool:
 print(is_valid("()[]{}"))
 
 # --- CODE EXPLANATION --- #
-
+"""
+- The 'is_valid' function takes a string 's' as an input.
+- It first creates a dictionary 'brackets_dict' that maps opening brackets to their corresponding closing brackets.
+- An empty list is the created to keep track of the opening brackets.
+- The function loops through each character in the input string.
+- If the character is an opening bracket, it is pushed onto the list.
+- If the character is a closing bracket, we pop the last opening bracket from the list and check if they match.
+- If they do not match or if the list is empty, then the input string is invalid and the function returns 'False'.
+- After looping, we check if the list is empty.
+- If it is empty, then all opening brackets have been matched and the input string is valid.
+- If it is not empty, then there are unmatched opening brackets and the input is invalid.
+"""
