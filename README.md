@@ -1,1 +1,1 @@
-Practicing C programming language.
+# LEARNING PROGRAMMING
