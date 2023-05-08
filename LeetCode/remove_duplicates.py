@@ -9,3 +9,6 @@ def remove_duplicates(nums):
             k += 1
 
     return k
+
+
+print(remove_duplicates([1, 4, 1, 5, 6, 9, 4, 5]))
