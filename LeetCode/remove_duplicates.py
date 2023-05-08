@@ -29,6 +29,7 @@ remove the duplicates in-place such that each unique element appears only once.
 5
 """
 
+
 def remove_duplicates(nums: list) -> int:
     # If the list is empty, return 0
     if not nums:
@@ -37,3 +38,14 @@ def remove_duplicates(nums: list) -> int:
     # Initialize variables for keeping track of unique elements and current element
     k = 1
     current = nums[0]
+
+    # Iterate through the list, starting from the second element
+    for i in range(1, len(nums)):
+        # If the current element is not a duplicate, add it to the unique elements and update current element
+        if nums[i] != current:
+            nums[k] = nums[i]
+            k += 1
+            current = nums[i]
+
+    # Return the number of unique elements
+    return k
