@@ -29,4 +29,11 @@ remove the duplicates in-place such that each unique element appears only once.
 5
 """
 
-def
+def remove_duplicates(nums: list) -> int:
+    # If the list is empty, return 0
+    if not nums:
+        return 0
+
+    # Initialize variables for keeping track of unique elements and current element
+    k = 1
+    current = nums[0]
