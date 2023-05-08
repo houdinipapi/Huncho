@@ -11,4 +11,4 @@ def remove_duplicates(nums):
     return k
 
 
-print(remove_duplicates([1, 4, 1, 5, 6, 9, 4, 5]))
+print(remove_duplicates([1, 1, 2]))
