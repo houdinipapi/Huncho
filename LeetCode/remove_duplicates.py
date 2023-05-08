@@ -1,1 +1,2 @@
-def remove_duplicates()
+def remove_duplicates(nums):
+    if len(nums) == 0:
