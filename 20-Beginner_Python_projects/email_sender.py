@@ -12,14 +12,13 @@ from app_code import pass_code
 # email_sender = "olivertim.ot@gmail.com"
 email_sender = input("Your Email: ")
 email_password = pass_code
-email_recipient = "taved91664@larland.com"
+# email_recipient = "taved91664@larland.com"
+email_recipient = input("RECIPIENT: ")
 
 # Set up message information
-subject = "Test Email"
-body = """
-This a is a test email.
-Let's see what it can do.
-"""
+subject = input("SUBJECT:")
+body = input("Body: ")
+
 # attachment_file = "sample.pdf"
 # image_file = "example.png"
 
