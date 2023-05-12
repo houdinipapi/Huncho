@@ -20,3 +20,9 @@ def div(a, b):
     return a / b
 
 
+while True:
+    print("A. Addition")
+    print("B. Subtraction")
+    print("C. Multiplication")
+    print("D. Division")
+    print("E. Exit")
