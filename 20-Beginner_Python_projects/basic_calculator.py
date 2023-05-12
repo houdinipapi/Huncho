@@ -44,4 +44,6 @@ while True:
     elif user_choice == "d" or user_choice == "D":
         print(f"Answer: {div(first_num, second_num)} \n")
 
-
+    elif user_choice == "e" or user_choice == "E":
+        print("PROGRAM ENDED!")
+        quit()
