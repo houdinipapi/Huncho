@@ -47,3 +47,6 @@ while True:
     elif user_choice == "e" or user_choice == "E":
         print("PROGRAM ENDED!")
         quit()
+
+    else:
+        print("INVALID CHOICE!!\n")
