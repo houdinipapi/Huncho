@@ -40,3 +40,8 @@ while True:
 
     elif user_choice == "c" or user_choice == "C":
         print(f"Answer: {mul(first_num, second_num)} \n")
+
+    elif user_choice == "d" or user_choice == "D":
+        print(f"Answer: {div(first_num, second_num)} \n")
+
+
