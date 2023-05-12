@@ -26,3 +26,11 @@ while True:
     print("C. Multiplication")
     print("D. Division")
     print("E. Exit")
+
+    # User Input
+    user_choice = input("Pick a choice: ")
+    first_num = int(input("First number: "))
+    second_num = int(input("Second number: "))
+
+    if user_choice == "a" or user_choice == "A":
+        print(f"Answer: {add(first_num, second_num)} \n")
