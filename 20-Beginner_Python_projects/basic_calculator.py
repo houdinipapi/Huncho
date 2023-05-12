@@ -37,3 +37,6 @@ while True:
 
     elif user_choice == "b" or user_choice == "B":
         print(f"Answer: {sub(first_num, second_num)} \n")
+
+    elif user_choice == "c" or user_choice == "C":
+        print(f"Answer: {mul(first_num, second_num)} \n")
