@@ -34,3 +34,6 @@ while True:
 
     if user_choice == "a" or user_choice == "A":
         print(f"Answer: {add(first_num, second_num)} \n")
+
+    elif user_choice == "b" or user_choice == "B":
+        print(f"Answer: {sub(first_num, second_num)} \n")
