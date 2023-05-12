@@ -12,4 +12,4 @@ def word_replacement():
     return statement.replace(word_to_replace, new_word)
 
 
-word_replacement()
+print(word_replacement())
