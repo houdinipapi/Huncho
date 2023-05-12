@@ -29,19 +29,25 @@ while True:
 
     # User Input
     user_choice = input("Pick a choice: ")
-    first_num = int(input("First number: "))
-    second_num = int(input("Second number: "))
 
     if user_choice == "a" or user_choice == "A":
+        first_num = int(input("First number: "))
+        second_num = int(input("Second number: "))
         print(f"Answer: {add(first_num, second_num)} \n")
 
     elif user_choice == "b" or user_choice == "B":
+        first_num = int(input("First number: "))
+        second_num = int(input("Second number: "))
         print(f"Answer: {sub(first_num, second_num)} \n")
 
     elif user_choice == "c" or user_choice == "C":
+        first_num = int(input("First number: "))
+        second_num = int(input("Second number: "))
         print(f"Answer: {mul(first_num, second_num)} \n")
 
     elif user_choice == "d" or user_choice == "D":
+        first_num = int(input("First number: "))
+        second_num = int(input("Second number: "))
         print(f"Answer: {div(first_num, second_num)} \n")
 
     elif user_choice == "e" or user_choice == "E":
