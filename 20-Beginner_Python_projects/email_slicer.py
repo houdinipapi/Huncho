@@ -11,4 +11,7 @@ def email_slicer():
     return f"Username: {username}\nMain Domain: {main_domain}\nDomain: {domain}\nExtension: {extension}\n"
 
 
-print(email_slicer())
+while True:
+    print(email_slicer())
+    if user_email == 0:
+        quit()
