@@ -13,5 +13,3 @@ def email_slicer():
 
 while True:
     print(email_slicer())
-    if user_email == 0:
-        quit()
