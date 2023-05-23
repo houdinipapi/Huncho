@@ -5,4 +5,4 @@ print(user_input)
 
 num_list = [1, 2, 3, 4]
 for i in num_list:
-    if i 
+    if i % 2 == 0: 
