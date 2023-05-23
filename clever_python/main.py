@@ -7,4 +7,4 @@ num_list = [1, 2, 3, 4]
 for i in num_list:
     if i % 2 == 0:
         i = 'EVEN'
-print(num_list)
+    print(num_list)
