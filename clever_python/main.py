@@ -7,4 +7,6 @@ num_list = [1, 2, 3, 4]
 for i in num_list:
     if i % 2 == 0:
         i = 0
-    print(num_list)
+    else:
+        i = 1
+print(num_list)
