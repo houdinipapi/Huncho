@@ -6,5 +6,5 @@ print(user_input)
 name_list = ["Papi", "Chulo", "Houdini"]
 for i in name_list:
     if i == "Chulo":
-        i.replace("Chulo", "Huncho")
+        name_list[i] = i.replace("Chulo", "Huncho")
 print(name_list)
