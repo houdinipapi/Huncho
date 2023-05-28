@@ -16,3 +16,9 @@ import random
 from pyfiglet import Figlet
 
 figlet = Figlet()
+
+if len(sys.argv) == 1:
+    text = input("Input: ")
+    font = random.choice(figlet.getFonts())
+    figlet.setFont(font=font)
+    print(f"Output: {figlet.renderText(text)}")
