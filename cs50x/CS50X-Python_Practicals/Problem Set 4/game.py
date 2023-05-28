@@ -26,3 +26,13 @@ while True:
             continue
         elif user_guess < random_integer:
             print("Too small!")
+            continue
+        elif user_guess > random_integer:
+            print("Too large!")
+            continue
+        elif user_guess == random_integer:
+            print("Just right!")
+            sys.exit("GAME OVER!")
+    except ValueError:
+        pass
+
