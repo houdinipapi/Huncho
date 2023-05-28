@@ -10,3 +10,7 @@
 - If the user provides two command-line arguments and the first is not -f or --font
   or the second is not the name of a font, the program should exit via sys.exit with an error message.
 """
+
+import sys
+import random
+from pyfiglet import Figlet
