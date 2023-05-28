@@ -1,3 +1,4 @@
+"""
  implement a program that:
 
 Expects zero or two command-line arguments:
@@ -6,3 +7,4 @@ Two if the user would like to output text in a specific font, in which case the 
 Prompts the user for a str of text.
 Outputs that text in the desired font.
 If the user provides two command-line arguments and the first is not -f or --font or the second is not the name of a font, the program should exit via sys.exit with an error message.
+"""
