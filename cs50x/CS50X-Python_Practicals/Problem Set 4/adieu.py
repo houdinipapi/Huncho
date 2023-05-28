@@ -18,3 +18,5 @@ Adieu, adieu, to Liesl, Friedrich, Louisa, Kurt, Brigitta, Marta, and Gretl
 import sys
 import inflect
 
+delimiter = inflect.engine()  # --> Acts as a delimiter when joining strings
+
