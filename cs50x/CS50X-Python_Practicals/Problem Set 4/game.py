@@ -20,18 +20,17 @@ while True:
             continue
         else:
             random_integer = random.randint(1, user_level)
-
-        user_guess = int(input("Guess: "))
-        if user_guess < 1:
-            continue
-        elif user_guess < random_integer:
-            print("Too small!")
-            continue
-        elif user_guess > random_integer:
-            print("Too large!")
-            continue
-        elif user_guess == random_integer:
-            print("Just right!")
-            sys.exit("GAME OVER!")
+            user_guess = int(input("Guess: "))
+            if user_guess < 1:
+                continue
+            elif user_guess < random_integer:
+                print("Too small!")
+                continue
+            elif user_guess > random_integer:
+                print("Too large!")
+                continue
+            elif user_guess == random_integer:
+                print("Just right!")
+                sys.exit()
     except ValueError:
         pass
