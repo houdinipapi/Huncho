@@ -35,4 +35,3 @@ while True:
             sys.exit("GAME OVER!")
     except ValueError:
         pass
-
