@@ -9,3 +9,14 @@
     If the guess is larger than that integer, the program should output Too large! and prompt the user again.
     If the guess is the same as that integer, the program should output Just right! and exit.
 """
+
+import sys
+import random
+
+while True:
+    try:
+        user_level = int(input("Level: "))
+        if user_level < 1:
+            continue
+        else:
+
