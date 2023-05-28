@@ -19,4 +19,10 @@ while True:
         if user_level < 1:
             continue
         else:
+            random_integer = random.randint(1, user_level)
 
+        user_guess = int(input("Guess: "))
+        if user_guess < 1:
+            continue
+        elif user_guess < random_integer:
+            print("Too small!")
