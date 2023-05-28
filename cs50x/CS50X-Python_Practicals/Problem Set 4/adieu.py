@@ -20,3 +20,10 @@ import inflect
 
 delimiter = inflect.engine()  # --> Acts as a delimiter when joining strings
 
+name_list = list()
+
+while True:
+    try:
+        names = input("Name: ").title()
+        if len(names) < 1:
+            sys.exit()
