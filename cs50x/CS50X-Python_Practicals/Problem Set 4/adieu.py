@@ -32,5 +32,8 @@ while True:
         output = delimiter.join(names_list)
 
     except EOFError:
-
-
+        print("\n")
+        print("Adieu, adieu, to " + output)
+        break
+    else:
+        continue
