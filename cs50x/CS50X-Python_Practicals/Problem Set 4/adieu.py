@@ -20,10 +20,17 @@ import inflect
 
 delimiter = inflect.engine()  # --> Acts as a delimiter when joining strings
 
-name_list = list()
+names_list = list()
 
 while True:
     try:
         names = input("Name: ").title()
         if len(names) < 1:
-            sys.exit()
+            sys.exit("No Input")
+
+        names_list.append(names)
+        output = delimiter.join(names_list)
+
+    except EOFError:
+
+
