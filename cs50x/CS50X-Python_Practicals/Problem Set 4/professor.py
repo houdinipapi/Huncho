@@ -28,6 +28,11 @@ def main():
     score = 0
     for _ in range(10):
         x, y = generate_integer(level)
+        problem = f"{x} + {y} = "
+        correct_answer = x + y
+        attempts = 0
+        while attempts < 3:
+            user_answer = input(problem)
 def get_level():
     while True:
         level = input("Level: ")
