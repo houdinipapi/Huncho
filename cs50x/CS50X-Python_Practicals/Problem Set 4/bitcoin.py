@@ -29,13 +29,12 @@ def main():
 
     try:
         response = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
-        response.raise_for_status()
         data = response.json()
-        usd_price = data["bpi"]["USD"]["rate_float"]
-        total_cost = bitcoins * usd_price
-        print(f"${total_cost:,.4f}")
-    except requests.RequestException as e:
-        sys.exit(f"Error: Failed to retrieve Bitcoin price - {str(e)}")
+        rateFloat = data["bpi"]["USD"]["rate_float"]
+        perCoin = bitcoins * rateFloat
+        print(f"${perCoin:,.4f}")
+    except requests.RequestException:
+        sys.exit()
 
 
 if __name__ == "__main__":
