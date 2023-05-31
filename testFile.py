@@ -1,1 +1,1 @@
-#include <stdio.h>
+#!/usr/python3
