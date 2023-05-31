@@ -7,3 +7,5 @@ try:
         sys.exit("Too Few Arguments")
     else:
         print(sys.argv[1:])
+except EOFError:
+    sys.exit("TERMINATED FORCEFULLY!!")
