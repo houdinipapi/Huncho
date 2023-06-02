@@ -6,7 +6,7 @@ if that input is a valid IPv4 address or not.
 """
 
 import re
-import sys
+# import sys
 
 
 def main():
