@@ -113,3 +113,10 @@ add_wine("Rose Wine", 750)
 
 add_outlet("Quickmart", 250)
 add_outlet("Carrefour", 100)
+
+record_sale(1, 1, 10)
+record_sale(2, 1, 5)
+record_sale(3, 2, 8)
+
+
+display_database()
