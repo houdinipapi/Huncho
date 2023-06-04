@@ -106,3 +106,7 @@ def display_database():
 
 # Example
 create_database()
+
+add_wine("Red Wine", 750)
+add_wine("White Wine", 750)
+add_wine("Rose Wine", 750)
