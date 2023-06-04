@@ -10,29 +10,29 @@ def create_database():
 
     # Create teh wines table
     c.execute(
-        """CREATE TABLE IF NOT EXISTS wines
+        '''CREATE TABLE IF NOT EXISTS wines
               (id INTEGER PRIMARY KEY AUTOINCREMENT,
                name TEXT NOT NULL,
-               capacity INTEGER NOT NULL)"""
+               capacity INTEGER NOT NULL)'''
     )
 
     # Create the outlets table
     c.execute(
-        """CREATE TABLE IF NOT EXISTS outlets
+        '''CREATE TABLE IF NOT EXISTS outlets
               (id INTEGER PRIMARY KEY AUTOINCREMENT,
                name TEXT NOT NULL,
-               stock INTEGER NOT NULL)"""
+               stock INTEGER NOT NULL)'''
     )
 
     # Create the sales tables
     c.execute(
-        """CREATE TABLE IF NOT EXISTS sales
+        '''CREATE TABLE IF NOT EXISTS sales
               (id INTEGER PRIMARY KEY AUTOINCREMENT,
                wine_id INTEGER NOT NULL,
                outlet_id INTEGER NOT NULL,
                quantity INTEGER NOT NULL,
-               FOREIGN_KEY(wine_id) REFERENCES wines(id),
-               FOREIGN_KEY(outlet_id) REFERENCES outlets(id))"""
+               FOREIGN KEY(wine_id) REFERENCES wines(id),
+               FOREIGN KEY(outlet_id) REFERENCES outlets(id))'''
     )
 
     conn.commit()
@@ -65,7 +65,7 @@ def record_sale(wine_id, outlet_id, quantity):
         "INSERT INTO sales(wine_id, outlet_id, quantity) VALUES(?, ?, ?)",
         (wine_id, outlet_id, quantity),
     )
-    c.excute("UPDATE outlets SET stock = stock - ? WHERE id = ?", (quantity, outlet_id))
+    c.execute("UPDATE outlets SET stock = stock - ? WHERE id = ?", (quantity, outlet_id))
     conn.commit()
     conn.close()
 
