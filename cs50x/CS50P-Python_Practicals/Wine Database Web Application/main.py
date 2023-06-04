@@ -105,3 +105,4 @@ def display_database():
 
 
 # Example
+create_database()
