@@ -8,8 +8,14 @@ import requests
 import random
 from fpdf import FPDF, XPos, YPos
 
+# Ask the user for the file name
+filename = input("Filename (without extension): ")
+
+# # Define the path and filename for the PDF file
+# pdf_path = os.path.join(r"C:\Users\ADMIN\PycharmProjects\firstProject\Huncho\20-Beginner_Python_projects\Random Quote Generator", "quotes.pdf")
+
 # Define the path and filename for the PDF file
-pdf_path = os.path.join(r"C:\Users\ADMIN\PycharmProjects\firstProject\Huncho\20-Beginner_Python_projects\Random Quote Generator", "quotes.pdf")
+pdf_path = os.path.join(os.getcwd(), f"{filename}.pdf")
 
 
 def random_quote():
@@ -30,23 +36,23 @@ def random_quote():
 
 
 # Saving the quotes in a PDF file
-def save_quotes_to_pdf(quotes):
+def save_quotes_to_pdf(quotes, filename):
     pdf = FPDF()
 
     # Set up the PDF document
     pdf.set_font('helvetica', size=12)
     pdf.add_page()
 
-    # Clear existing content
-    pdf.set_xy(0, 0)
-    pdf._out('')
+    # # Clear existing content
+    # pdf.set_xy(0, 0)
+    # pdf._out('')
 
     # Write each quote to the PDF
     for quote in quotes:
         pdf.cell(0, 10, txt=quote, new_x=XPos.LMARGIN, new_y=YPos.NEXT)
 
     # Save the PDF file
-    pdf.output("quotes.pdf")
+    pdf.output(f"{filename}.pdf")
 
 
 # Load existing quotes from the PDF file
@@ -66,11 +72,8 @@ for _ in range(3):  # --> Generate 3 new quotes
     quote = random_quote()
     new_quotes.append(quote)
 
-# Combine existing quotes and new quotes
-combined_quotes = existing_quotes + new_quotes
-
-# Save all quotes (existing and new) to the PDF file
-save_quotes_to_pdf(combined_quotes)
+# Save new quotes to the PDF file
+save_quotes_to_pdf(new_quotes, filename)
 
 # Print the new_quotes
 for quote in new_quotes:
