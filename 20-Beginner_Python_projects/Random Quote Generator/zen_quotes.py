@@ -68,13 +68,13 @@ except FileNotFoundError:
 
 # Generate new quotes
 new_quotes = []
-for _ in range(3):  # --> Generate 3 new quotes
+for _ in range(5):  # --> Generate 5 new quotes
     quote = random_quote()
     new_quotes.append(quote)
 
 # Save new quotes to the PDF file
 save_quotes_to_pdf(new_quotes, filename)
 
-# Print the new_quotes
-for quote in new_quotes:
-    print(quote)
+# # Print the new_quotes
+# for quote in new_quotes:
+#     print(quote)
