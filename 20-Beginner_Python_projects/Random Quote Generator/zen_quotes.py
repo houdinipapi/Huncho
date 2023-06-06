@@ -75,6 +75,6 @@ for _ in range(5):  # --> Generate 5 new quotes
 # Save new quotes to the PDF file
 save_quotes_to_pdf(new_quotes, filename)
 
-# # Print the new_quotes
+# # Print the new_quotes --> Prints in the terminal
 # for quote in new_quotes:
 #     print(quote)
