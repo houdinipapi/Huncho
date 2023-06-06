@@ -23,7 +23,7 @@ def parse(s):
 
     if url:
         new_url = url.group(1)
-        youtube_link = re.search(r'youtube'), new_url)
+        youtube_link = re.search(r'(youtube)', new_url)
 
         if youtube_link:
             video_id = re.sub(r"(https?://)?(www\.)?youtube\.com/([a-z0-9_]+)", "", new_url)
