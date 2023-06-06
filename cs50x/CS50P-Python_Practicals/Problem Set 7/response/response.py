@@ -5,7 +5,7 @@ an email address via input.
 a syntatically valid email address.
 - No use of 're'.
 - Do not validate whether the email address's
-domain name actuall exists.
+domain name actually exists.
 """
 
 from validators import email
