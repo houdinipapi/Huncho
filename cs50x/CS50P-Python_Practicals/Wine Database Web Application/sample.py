@@ -105,13 +105,13 @@ def display_database():
 
 
 def main():
-    wine_name = input("Enter Wine: ")
+    wine_name = input("Wine Name: ")
+    wine_id = int(input("Wine ID no.: "))
     wine_quantity = int(input("Quantity: "))
-    outlet_name = input("Outlet: ")
+    outlet_name = input("Outlet Name: ")
+    outlet_id = int(input("Outlet ID no: "))
     stock_amount = int(input("Stock Amount: "))
     sales_amount = int(input("Sales: "))
-    wine_id = int(input("Wine ID: "))
-    outlet_id = int(input("Outlet ID: "))
 
     create_database()
     add_wine(wine_name, wine_quantity)
