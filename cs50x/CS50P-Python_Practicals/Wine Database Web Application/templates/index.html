@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wine Database</title>
+    <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}"> -->
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        form {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Wine Database</h1>
+
+    <h2>Wines</h2>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Capacity</th>
+        </tr>
+        {% for wine in wines %}
+            <tr>
+                <td>{{ wine[0] }}</td>
+                <td>{{ wine[1] }}</td>
+                <td>{{ wine[2] }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+
+    <h2>Outlets</h2>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Stock</th>
+        </tr>
+        {% for outlet in outlets %}
+            <tr>
+                <td>{{ outlet[0] }}</td>
+                <td>{{ outlet[1] }}</td>
+                <td>{{ outlet[2] }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+
+    <h2>Sales</h2>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Wine</th>
+            <th>Outlet</th>
+            <th>Quantity</th>
+        </tr>
+        {% for sale in sales %}
+            <tr>
+                <td>{{ sale[0] }}</td>
+                <td>{{ sale[1] }}</td>
+                <td>{{ sale[2] }}</td>
+                <td>{{ sale[3] }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+
+    <h2>Add Wine</h2>
+    <form action="/add_wine" method="post">
+        <input type="text" name="wine_name" placeholder="Wine Name" required>
+        <input type="number" name="wine_capacity" placeholder="Wine Capacity" required>
+        <input type="submit" value="Add Wine">
+    </form>
+
+    <h2>Add Outlet</h2>
+    <form action="/add_outlet" method="post">
+        <input type="text" name="outlet_name" placeholder="Outlet Name" required>
+        <input type="number" name="outlet_stock" placeholder="Outlet Stock" required>
+        <input type="submit" value="Add Outlet">
+    </form>
+
+    <h2>Record Sale</h2>
+    <form action="/record_sale" method="post">
+        <select name="wine_id" required>
+            {% for wine in wines %}
+                <option value="{{ wine[0] }}">{{ wine[1] }}</option>
+            {% endfor %}
+        </select>
+        <select name="outlet_id" required>
+            {% for outlet in outlets %}
+                <option value="{{ outlet[0] }}">{{ outlet[1] }}</option>
+            {% endfor %}
+        </select>
+        <input type="number" name="sale_quantity" placeholder="Sale Quantity" required>
+        <input type="submit" value="Record Sale">
+    </form>
+</body>
+</html>
