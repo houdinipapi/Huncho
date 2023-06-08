@@ -111,12 +111,10 @@ def get_sales():
 # Route to display the home page
 @app.route('/')
 def home():
-    return render_template('index.html')
-# def home():
-#     wines = get_wines()
-#     outlets = get_outlets()
-#     sales = get_sales()
-#     return render_template("index.html", wines=wines, outlets=outlets, sales=sales)
+    wines = get_wines()
+    outlets = get_outlets()
+    sales = get_sales()
+    return render_template("index.html", wines=wines, outlets=outlets, sales=sales)
 
 
 # Route to handle form submission for adding a wine
