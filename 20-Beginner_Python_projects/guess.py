@@ -4,3 +4,5 @@
 - Guess a number
 """
 import random
+
+user_num = int(input("Enter a Number: ")
