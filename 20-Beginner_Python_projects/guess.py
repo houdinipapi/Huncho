@@ -6,4 +6,6 @@
 import random
 import sys
 
-user_num = int(input("Enter a Number: ")
+
+try:
+    user_num = int(input("Enter a Number: ")
