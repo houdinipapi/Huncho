@@ -8,31 +8,31 @@ def create_database():
     conn = sqlite3.connect("wine_database.db")
     c = conn.cursor()
 
-    # Create teh wines table
+    # Create the wines table
     c.execute(
-        '''CREATE TABLE IF NOT EXISTS wines
+        """CREATE TABLE IF NOT EXISTS wines
               (id INTEGER PRIMARY KEY AUTOINCREMENT,
                name TEXT NOT NULL,
-               capacity INTEGER NOT NULL)'''
+               capacity INTEGER NOT NULL)"""
     )
 
     # Create the outlets table
     c.execute(
-        '''CREATE TABLE IF NOT EXISTS outlets
+        """CREATE TABLE IF NOT EXISTS outlets
               (id INTEGER PRIMARY KEY AUTOINCREMENT,
                name TEXT NOT NULL,
-               stock INTEGER NOT NULL)'''
+               stock INTEGER NOT NULL)"""
     )
 
     # Create the sales tables
     c.execute(
-        '''CREATE TABLE IF NOT EXISTS sales
+        """CREATE TABLE IF NOT EXISTS sales
               (id INTEGER PRIMARY KEY AUTOINCREMENT,
                wine_id INTEGER NOT NULL,
                outlet_id INTEGER NOT NULL,
                quantity INTEGER NOT NULL,
                FOREIGN KEY(wine_id) REFERENCES wines(id),
-               FOREIGN KEY(outlet_id) REFERENCES outlets(id))'''
+               FOREIGN KEY(outlet_id) REFERENCES outlets(id))"""
     )
 
     conn.commit()
@@ -65,7 +65,9 @@ def record_sale(wine_id, outlet_id, quantity):
         "INSERT INTO sales(wine_id, outlet_id, quantity) VALUES(?, ?, ?)",
         (wine_id, outlet_id, quantity),
     )
-    c.execute("UPDATE outlets SET stock = stock - ? WHERE id = ?", (quantity, outlet_id))
+    c.execute(
+        "UPDATE outlets SET stock = stock - ? WHERE id = ?", (quantity, outlet_id)
+    )
     conn.commit()
     conn.close()
 
@@ -104,19 +106,38 @@ def display_database():
     conn.close()
 
 
+def main():
+    wine_name = input("Wine Name: ")
+    wine_id = int(input("Wine ID no.: "))
+    wine_quantity = int(input("Quantity: "))
+    outlet_name = input("Outlet Name: ")
+    outlet_id = int(input("Outlet ID no: "))
+    stock_amount = int(input("Stock Amount: "))
+    sales_amount = int(input("Sales: "))
+
+    create_database()
+    add_wine(wine_name, wine_quantity)
+    add_outlet(outlet_name, stock_amount)
+    record_sale(wine_id=wine_id, outlet_id=outlet_id, quantity=sales_amount)
+    display_database()
+
+
+if __name__ == "__main__":
+    main()
+
 # Example
-create_database()
+# create_database()
 
-add_wine("Red Wine", 750)
-add_wine("White Wine", 750)
-add_wine("Rose Wine", 750)
+# add_wine("Red Wine", 750)
+# add_wine("White Wine", 750)
+# add_wine("Rose Wine", 750)
 
-add_outlet("Quickmart", 250)
-add_outlet("Carrefour", 100)
+# add_outlet("Quickmart", 250)
+# add_outlet("Carrefour", 100)
 
-record_sale(1, 1, 10)
-record_sale(2, 1, 5)
-record_sale(3, 2, 8)
+# record_sale(1, 1, 10)
+# record_sale(2, 1, 5)
+# record_sale(3, 2, 8)
 
 
-display_database()
+# display_database()
