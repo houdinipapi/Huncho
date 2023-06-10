@@ -11,7 +11,7 @@ comp_num = random.choice(num_list)
 
 while True:
     if len(sys.argv) < 2:
-
+        sys.exit("Few Commands")
     try:
         user_num = int(input("Enter a Number: "))
 
