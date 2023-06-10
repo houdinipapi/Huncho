@@ -14,7 +14,7 @@ while True:
         sys.exit("Few Commands")
     else:
         try:
-            user_num = int(input("Enter a Number: "))
+            user_num = sys.argv[1]
 
             if user_num == comp_num:
                 sys.exit("CORRECT MATCH")
