@@ -64,7 +64,6 @@
                 "I'm Houdini, the assistant of Papi!"
             ]
         },
-
         {
             "tag": "shop",
             "patterns": [
@@ -79,8 +78,7 @@
                 "Jewellery and accessories!",
                 "Perfumes and Lotions!"
             ]
-        }
-
+        },
         {
             "tag": "hours",
             "patterns": [
@@ -89,7 +87,9 @@
                 "hours of opening?",
                 "working hours"
             ],
-            "responses": ["24/7"]
+            "responses": [
+                "24/7"
+            ]
         }
     ]
 }
