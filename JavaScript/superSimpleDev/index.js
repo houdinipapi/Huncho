@@ -10,14 +10,27 @@ let iceCream = 5;
 
 total = soup + (burgers * 3) + iceCream;
 
-console.log("Total cost: $" + total)
+console.log("Total cost: $" + total);
 
 // 1 toaster @ $18.50
 // 2 shirts @ $7.50
 // Calculate total
-let toaster = 18.50
-let shirt = 7.50
+let toaster = 18.50;
+let shirt = 7.50;
 
-totalCost = toaster + (shirt * 2)
+totalCost = toaster + (shirt * 2);
 
-console.log("Total cost: $" + totalCost)
+console.log("Total cost: $" + totalCost);
+
+// Calculate 10% tax for the total
+
+let tax = (10 / 100);
+console.log(tax * totalCost);
+
+// Temperature conversion
+// Farenheit = (Celcius * 9 / 5) + 32;
+// Celcius = (Farenheit - 32) * 5 / 9;
+
+console.log(((25 * 9 / 5) + 32) + "F")  // --> Converting 25 degrees celsius to Fahrenheit
+
+console.log(((86 - 32) * 5 / 9) + " Degrees Celsius")
