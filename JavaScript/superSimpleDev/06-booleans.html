@@ -35,6 +35,43 @@
             } else {
                 console.log('You CANNOT vote!');
             }
+
+            // Truthy and Falsy values
+            if (0) {
+                console.log('truthy');
+            }
+
+            const cartQuantity = 5;
+
+            if (cartQuantity) {
+                console.log('cart has products');
+            }
+
+            // truthy
+            console.log(!0);
+
+            // NaN --> Not a Number
+            console.log('text' / 7);
+
+            // undefined
+            let variable1;
+            console.log(variable1);
+
+            // TERNARY OPERATOR (?:)
+            const result = 0 ? 'truthy' : 'falsy';
+            console.log(result);
+
+            // GUARD OPERATOR
+            false && console.log('hello');
+
+            const message = 5 && 'hello';
+            console.log(message);
+
+            // DEFAULT OPERATOR
+            const currency = undefined || 'USD';
+            console.log(currency);
+            
+
         </script>
 
     </body>
