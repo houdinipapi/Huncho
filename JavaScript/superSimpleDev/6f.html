@@ -9,14 +9,24 @@
         <script>
 
             const randomNumber = Math.random();
+            const guess = 'tails';
+            let result;
 
-            if (randomNumber < 0.5) {
-                let result = 'heads';
-                console.log(result);
-            } else {
-                result = 'tails';
-                console.log(result);
-            }
+        //     if (randomNumber < 0.5) {
+        //         result = 'heads';
+        //     } else {
+        //         result = 'tails';
+        // }
+
+            result = (randomNumber < 0.5) ? 'heads' : 'tails';
+
+        // if (guess === result) {
+        //     console.log('You win!');
+        // } else {
+        //     console.log('You lose!');
+        // }
+            outcome = (guess === result) ? 'You win!' : 'You lose!';
+            console.log(outcome);
 
         </script>
     </body>
