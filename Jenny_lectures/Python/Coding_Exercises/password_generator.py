@@ -16,4 +16,8 @@ for _ in range(1, (n_letters + 1)):
     char = random.choice(p_letters)
     password += char
 
+for _ in range(1, n_digits + 1):
+    char = random.choice(p_digits)
+    password += char
+
 print(f"Password: {password}")
