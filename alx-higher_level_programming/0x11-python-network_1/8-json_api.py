@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-'''
+"""
 - A Python script that takes in a letter and sends a POST request to http://0.0.0.0:5000/search_user with the letter as a parameter.
 - The letter must be sent in the variable q
 - If no argument is given, set q=""
@@ -10,7 +10,7 @@
     - Display `No result` if the JSON is empty
 - Must use the package requests and sys
 - Not allowed to import packages other than requests and sys.
-'''
+"""
 
 import sys
 import requests
