@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-'''
+"""
 - A Python script that:
     - takes in a URL,
     - sends a request to the URL,
@@ -10,7 +10,7 @@
 - Not allowed to import other packages than urllib and sys.
 - No need to check arguments passed to the script (number or type)
 - Must use the with statement.
-'''
+"""
 
 from sys import argv
 from urllib.request import urlopen

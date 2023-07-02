@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-'''
+"""
 - A Python script that:
     - takes a URL and an email,
     - sends a POST request to the passed URL with the email as a parameter, and
@@ -10,7 +10,7 @@
 - Not allowed to import packages other than urllib and sys.
 - No need to check arguments passed to the script (number or type)
 - Must use the `with` statement
-'''
+"""
 
 import sys
 import urllib.parse
