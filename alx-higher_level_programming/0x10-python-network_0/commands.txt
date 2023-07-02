@@ -1,0 +1,1 @@
+icacls .\<file-name> /grant Everyone:RX --> Make a file executable in Windows Powershell
