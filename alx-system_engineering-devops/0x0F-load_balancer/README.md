@@ -3,8 +3,8 @@
 
 ## Background Context
 You have been given 2 additional servers:
-    - gc-[STUDENT_ID]-web-02-XXXXXXXXXX
-    - gc-[STUDENT_ID]-lb-01-XXXXXXXXXX
+- gc-[STUDENT_ID]-web-02-XXXXXXXXXX
+- gc-[STUDENT_ID]-lb-01-XXXXXXXXXX
 
 Let’s improve our web stack so that there is [redundancy](https://intranet.alxswe.com/rltoken/xnAaJdhmAxx7PoH3l6EwDg) for our web servers.
 This will allow us to be able to accept more traffic by doubling the number of web servers, and to make our infrastructure more reliable.
