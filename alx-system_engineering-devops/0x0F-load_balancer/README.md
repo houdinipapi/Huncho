@@ -40,6 +40,7 @@ If your server's hostnames are not properly configured (`[STUDENT_ID]-web-01` an
 ## 1. Install your load balancer
 
 Install and configure HAproxy on your `lb-01` server.
+
 Requirements:
 - Configure HAproxy so that it sends traffic to `web-01` and `web-02`.
 - Distribute requests using a roundrobin algorithm.
