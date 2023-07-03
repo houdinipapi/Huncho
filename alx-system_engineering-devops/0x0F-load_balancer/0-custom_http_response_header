@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+# Double the number of web-servers.
+
+sudo apt-get -y update
+sudo apt-get -y install nginx
+
+mkdir /etc/nginx/html
+touch /etc/nginx/html/index.html
+echo "Hello World!" > /etc/nginx/html/index.html
+printf %s "server {
+     listen      80 default_server;
+     listen      [::]:80 default_server;
+     root        /etc/nginx/html;
+     index       index.html index.htm;
+     add_header  X-Served-By $HOSTNAME;
+}
+" > /etc/nginx/sites-available/default
+
+service nginx restart
