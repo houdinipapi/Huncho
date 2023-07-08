@@ -4,7 +4,7 @@ import sys
 
 try:
     if len(sys.argv) < 2:
-        sys.exit("Too Few Arguments")
+        sys.exit("Few Comandline Arguments")
     else:
         print(sys.argv[1:])
 except EOFError:
