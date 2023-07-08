@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 # Test File
+# Testing the command line arguments
 
 import sys
 
