@@ -15,4 +15,5 @@ for index, item in enumerate(list1):
     if item == target:
         print(f"Target found at index: {index}")
         break
-print("Target not found")
+else:
+    print("Target not found")
