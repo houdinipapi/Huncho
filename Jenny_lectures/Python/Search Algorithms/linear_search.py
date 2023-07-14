@@ -6,5 +6,5 @@
 
 list1 = [23, 45, 83, 21, 13, 27]
 
-for i in list1:
-    print(i)
+for index, item in enumerate(list1):
+    print(f"Index: {index}, Item: {item}")
