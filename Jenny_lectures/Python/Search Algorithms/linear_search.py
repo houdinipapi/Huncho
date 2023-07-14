@@ -10,4 +10,4 @@ target = 83
 for index, item in enumerate(list1):
     # print(f"Index: {index}, Item: {item}")
     if item == target:
-        print(index)
+        print(f"Target found at index: {index}")
