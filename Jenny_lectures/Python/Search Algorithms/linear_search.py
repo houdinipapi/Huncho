@@ -7,8 +7,8 @@
 # list1 = [23, 45, 83, 21, 13, 27]
 user_input = input("Enter items separated by space: ")
 list1 = user_input.split()
-print(list1)
-target = 83
+# print(list1)
+target = input("Target: ")
 
 for index, item in enumerate(list1):
     # print(f"Index: {index}, Item: {item}")
