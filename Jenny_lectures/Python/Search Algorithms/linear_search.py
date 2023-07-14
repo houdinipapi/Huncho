@@ -4,7 +4,10 @@
 - Linear Search
 """
 
-list1 = [23, 45, 83, 21, 13, 27]
+# list1 = [23, 45, 83, 21, 13, 27]
+user_input = input("Enter items separated by space: ")
+list1 = user_input.split()
+print(list1)
 target = 83
 
 for index, item in enumerate(list1):
