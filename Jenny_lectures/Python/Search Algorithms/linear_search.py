@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """
-Linear Search Algorithm
+--> Linear Search Algorithm
 """
 
 # list1 = [23, 45, 83, 21, 13, 27]
